@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.5.1/vue-resource.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="input-group md-form form-sm form-2 pl-0">
+                <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search" v-model="cspModel.value">
+                <div class="input-group-append">
+                <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+                    aria-hidden="true" v-on:click="getALLCSP()"></i></span>
+                </div>
+            </div>
+            <br/>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th class="center aligned no-sort">PO#</th>
+                        <th class="center aligned no-sort">Origin</th>
+                        <th class="center aligned">DSTN</th>
+                        <th class="center aligned no-sort">Master#</th>
+                        <th class="center aligned">House#</th>
+                        <th class="center aligned">CTNR#</th>
+                        <th class="center aligned">Shipping Instruction Received From SHPR</th>
+                        <th class="center aligned">Customer Target Available Date</th>
+                        <th class="center aligned">Customer Expected Departure Date</th>
+                        <th class="center aligned">Customer Expected Arrival Date</th>
+                        <th class="center aligned">ODM Booking date</th>
+                        <th class="center aligned">Booking Confirmation</th>
+                        <th class="center aligned">Space confirm date</th>
+                        <th class="center aligned">CYM</th>
+                        <th class="center aligned">Scheduled Ex-factory Date (at booking form request)</th>
+                        <th class="center aligned">Pick Up Order To Trucker</th>
+                        <th class="center aligned">ODM Ex-factory Date</th>
+                        <th class="center aligned">Document Est. Pickup Date</th>
+                        <th class="center aligned">Document Actual Pickup Date</th>
+                        <th class="center aligned">Actual Arrival Date & Time at Airport</th>
+                        <th class="center aligned">AES Filing Date Export Customs Release Date</th>
+                        <th class="center aligned">AE Invoice Issued</th>
+                        <th class="center aligned">Estimated to depart warehouse terminal</th>
+                        <th class="center aligned">ETD</th>
+                        <th class="center aligned">ATD</th>
+                        <th class="center aligned">ETA</th>
+                        <th class="center aligned">Actual to depart warehouse terminal</th>
+                        <th class="center aligned">CBSA Descartes Accept Date</th>
+                        <th class="center aligned">CBSA Descartes Reject Date</th>
+                        <th class="center aligned">CBSA Customs Reject Date</th>
+                        <th class="center aligned">CBSA Customs Accept Date</th>
+                        <th class="center aligned">CBSA Filling Date</th>
+                        <th class="center aligned">eManifest First Sent</th>
+                        <th class="center aligned">MAWB ePrealert First Sent</th>
+                        <th class="center aligned">ePrealert First Sent</th>
+                        <th class="center aligned">Export Lot Closed</th>
+                        <th class="center aligned">eManifest Receive</th>
+                        <th class="center aligned">Pre-alert Receive</th>
+                        <th class="center aligned">MAWB Created</th>
+                        <th class="center aligned">Document Pickup</th>
+                        <th class="center aligned">ATA</th>
+                        <th class="center aligned">Console Released from Airline</th>
+                        <th class="center aligned">Cargo Transfer From Terminal</th>
+                        <th class="center aligned">Document Delivery</th>
+                        <th class="center aligned">Release Date</th>
+                        <th class="center aligned">Arrival Notice Sent to CNEE</th>
+                        <th class="center aligned">Notify Broker of Document</th>
+                        <th class="center aligned">Textile License Ready Date</th>
+                        <th class="center aligned">Customs Clearance Date</th>
+                        <th class="center aligned">Storage Begin Date</th>
+                        <th class="center aligned">Document Release Date</th>
+                        <th class="center aligned">Cargo Pick Up Airline</th>
+                        <th class="center aligned">Planned Date of Delivery Date</th>
+                        <th class="center aligned">Actual Date of Delivery</th>
+                        <th class="center aligned">Freight Release Date</th>
+                        <th class="center aligned">POD Received Date</th>
+                        <th class="center aligned">AI Invoice Issued</th>
+                        <th class="center aligned">Cargo Claim From CNEE</th>
+                        <th class="center aligned">Preliminary Cargo Claim To Carrier</th>
+                        <th class="center aligned">Cargo Claim Settlement Date</th>
+                        <th class="center aligned">CloseShipment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template v-for="(item, index) in csplistdata">
+                        <tr>
+                            <td></td>
+                            <td>{{ item.Origin }}</td>
+                            <td>{{ item.DSTN }}</td>
+                            <td>{{ item.Master }}</td>
+                            <td>{{ item.House }}</td>
+                            <td>{{ item.CTNR }}</td>
+                            <td>{{ item.ShippingInstructionReceivedFromSHPR }}</td>
+                            <td>{{ item.CustomerTargetAvailableDate }}</td>
+                            <td>{{ item.CustomerExpectedDepartureDate }}</td>
+                            <td>{{ item.CustomerExpectedArrivalDate }}</td>
+                            <td>{{ item.ODMBookingdate }}</td>
+                            <td>{{ item.BookingConfirmation }}</td>
+                            <td>{{ item.Spaceconfirmdate }}</td>
+                            <td>{{ item.CYM }}</td>
+                            <td>{{ item.ScheduledExfactoryDateatbookingformrequest }}</td>
+                            <td>{{ item.PickUpOrderToTrucker }}</td>
+                            <td>{{ item.ODMExfactoryDate }}</td>
+                            <td>{{ item.DocumentEstPickupDate }}</td>
+                            <td>{{ item.DocumentActualPickupDate }}</td>
+                            <td>{{ item.ActualArrivalDateTimeatAirport }}</td>
+                            <td>{{ item.AESFilingDateExportCustomsReleaseDate }}</td>
+                            <td>{{ item.AEInvoiceIssued }}</td>
+                            <td>{{ item.Estimatedtodepartwarehouseterminal }}</td>
+                            <td>{{ item.ETD }}</td>
+                            <td>{{ item.ATD }}</td>
+                            <td>{{ item.ETA }}</td>
+                            <td>{{ item.Actualtodepartwarehouseterminal }}</td>
+                            <td>{{ item.CBSADescartesAcceptDate }}</td>
+                            <td>{{ item.CBSADescartesRejectDate }}</td>
+                            <td>{{ item.CBSACustomsRejectDate }}</td>
+                            <td>{{ item.CBSACustomsAcceptDate }}</td>
+                            <td>{{ item.CBSAFillingDate }}</td>
+                            <td>{{ item.eManifestFirstSent }}</td>
+                            <td>{{ item.MAWBePrealertFirstSent }}</td>
+                            <td>{{ item.ePrealertFirstSent }}</td>
+                            <td>{{ item.ExportLotClosed }}</td>
+                            <td>{{ item.eManifestReceive }}</td>
+                            <td>{{ item.PrealertReceive }}</td>
+                            <td>{{ item.MAWBCreated }}</td>
+                            <td>{{ item.DocumentPickup }}</td>
+                            <td>{{ item.ATA }}</td>
+                            <td>{{ item.ConsoleReleasedfromAirline }}</td>
+                            <td>{{ item.CargoTransferFromTerminal }}</td>
+                            <td>{{ item.DocumentDelivery }}</td>
+                            <td>{{ item.ReleaseDate }}</td>
+                            <td>{{ item.ArrivalNoticeSenttoCNEE }}</td>
+                            <td>{{ item.NotifyBrokerofDocument }}</td>
+                            <td>{{ item.TextileLicenseReadyDate }}</td>
+                            <td>{{ item.CustomsClearanceDate }}</td>
+                            <td>{{ item.StorageBeginDate }}</td>
+                            <td>{{ item.DocumentReleaseDate }}</td>
+                            <td>{{ item.CargoPickUpAirline }}</td>
+                            <td>{{ item.PlannedDateofDeliveryDate }}</td>
+                            <td>{{ item.ActualDateofDelivery }}</td>
+                            <td>{{ item.FreightReleaseDate }}</td>
+                            <td>{{ item.PODReceivedDate }}</td>
+                            <td>{{ item.AIInvoiceIssued }}</td>
+                            <td>{{ item.CargoClaimFromCNEE }}</td>
+                            <td>{{ item.PreliminaryCargoClaimToCarrier }}</td>
+                            <td>{{ item.CargoClaimSettlementDate }}</td>
+                            <td>{{ item.CloseShipment }}</td>                        
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            cspApiUrl : "http://localhost:49826/CSP/api/CSP/getCSP",
+            csplistdata: [],
+            cspModel: {
+                value: '',
+                Page:1,
+	            Count: 1000,
+                projectid:'46876'
+            },
+        },
+        mounted : function() {
+            this.getALLCSP();
+        },
+        methods: {
+            getALLCSP : function (){
+                var formData = this.cspModel;
+
+                        this.$http.post(this.cspApiUrl, formData, { emulateJSON: true })
+                            .then(function (res) {
+                                vm.csplistdata = res.body.data;
+                                console.log(res.body);
+                                //containermain.productlistdata[index - 1].Status = vm.statusModel.enable ? 1 : 0;
+                            }, function (res) {
+                                console.log(res.status);
+                            });
+            }
+        }
+    })
+
+</script>
+<style>
+    nav.navbar {
+      background: transparent;
+    }
+    .input-group.md-form.form-sm.form-1 input{
+      border: 1px solid #bdbdbd;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+    .input-group.md-form.form-sm.form-2 input {
+      border: 1px solid #bdbdbd;
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+    }
+    .input-group.md-form.form-sm.form-2 input.red-border {
+      border: 1px solid #ef9a9a;
+    }
+    .input-group.md-form.form-sm.form-2 input.lime-border {
+      border: 1px solid #cddc39;
+    }
+    .input-group.md-form.form-sm.form-2 input.amber-border {
+      border: 1px solid #ffca28;
+    }
+    </style>
+</html>

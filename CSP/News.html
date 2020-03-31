@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.5.1/vue-resource.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+        <!-- Search form -->
+            <div class="input-group md-form form-sm form-2 pl-0">
+                <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search" v-model="NewsModel.value">
+                <div class="input-group-append">
+                <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+                    aria-hidden="true" v-on:click="getALLNews()"></i></span>
+                </div>
+            </div>
+            <br/>
+            <template v-for="(item, index) in newslistdata">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion"  v-bind:href="item.url">
+                                    {{item.title }}
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                {{ item.description }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            newsApiUrl : "http://localhost:49826/News/api/News/getNews",
+            newslistdata: [],
+            NewsModel: {
+                value: '',
+            },
+        },
+        mounted : function() {
+            this.getALLNews();
+        },
+        methods: {
+            getALLNews : function (){
+                var formData = this.NewsModel;
+
+                        this.$http.post(this.newsApiUrl, formData, { emulateJSON: true })
+                            .then(function (res) {
+                                vm.newslistdata = res.body.data;
+                                console.log(res.body);
+                                //containermain.productlistdata[index - 1].Status = vm.statusModel.enable ? 1 : 0;
+                            }, function (res) {
+                                console.log(res.status);
+                            });
+            }
+        }
+    })
+
+</script>
+
+<style>
+nav.navbar {
+  background: transparent;
+}
+.input-group.md-form.form-sm.form-1 input{
+  border: 1px solid #bdbdbd;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input {
+  border: 1px solid #bdbdbd;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input.red-border {
+  border: 1px solid #ef9a9a;
+}
+.input-group.md-form.form-sm.form-2 input.lime-border {
+  border: 1px solid #cddc39;
+}
+.input-group.md-form.form-sm.form-2 input.amber-border {
+  border: 1px solid #ffca28;
+}
+</style>
+</html>

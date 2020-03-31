@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eChainVP_CentralModelStoreContainer" CdmEntityContainer="eChainVP_CentralEntities">
+    <EntitySetMapping Name="CSPKeyValueForNoSQL">
+      <EntityTypeMapping TypeName="eChainVP_CentralModel.CSPKeyValueForNoSQL">
+        <MappingFragment StoreEntitySet="CSPKeyValueForNoSQL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,2753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CSPModelStoreContainer" CdmEntityContainer="CSPEntities">
+    <EntitySetMapping Name="BDDepartment">
+      <EntityTypeMapping TypeName="CSPModel.BDDepartment">
+        <MappingFragment StoreEntitySet="BDDepartment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DeptCode" ColumnName="DeptCode" />
+          <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+          <ScalarProperty Name="DeptDesc" ColumnName="DeptDesc" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMArticle">
+      <EntityTypeMapping TypeName="CSPModel.CMArticle">
+        <MappingFragment StoreEntitySet="CMArticle">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ContentTypeID" ColumnName="ContentTypeID" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Attachments" ColumnName="Attachments" />
+          <ScalarProperty Name="ViewCount" ColumnName="ViewCount" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDT" ColumnName="CreatedDT" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDT" ColumnName="UpdatedDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMArticleAttach">
+      <EntityTypeMapping TypeName="CSPModel.CMArticleAttach">
+        <MappingFragment StoreEntitySet="CMArticleAttach">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="Attach" ColumnName="Attach" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDT" ColumnName="CreatedDT" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDT" ColumnName="UpdatedDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMArticleType">
+      <EntityTypeMapping TypeName="CSPModel.CMArticleType">
+        <MappingFragment StoreEntitySet="CMArticleType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ArticleType" ColumnName="ArticleType" />
+          <ScalarProperty Name="TypeDesc" ColumnName="TypeDesc" />
+          <ScalarProperty Name="SortNo" ColumnName="SortNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDT" ColumnName="CreatedDT" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDT" ColumnName="UpdatedDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPLog">
+      <EntityTypeMapping TypeName="CSPModel.CPLog">
+        <MappingFragment StoreEntitySet="CPLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="LogType" ColumnName="LogType" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="EventDT" ColumnName="EventDT" />
+          <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="EventParameter" ColumnName="EventParameter" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="CreatedDT" ColumnName="CreatedDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPProject">
+      <EntityTypeMapping TypeName="CSPModel.CPProject">
+        <MappingFragment StoreEntitySet="CPProject">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="ProjectDesc" ColumnName="ProjectDesc" />
+          <ScalarProperty Name="AdminMail" ColumnName="AdminMail" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDT" ColumnName="CreatedDT" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDT" ColumnName="UpdatedDT" />
+          <ScalarProperty Name="NeedDetailMilestone" ColumnName="NeedDetailMilestone" />
+          <ScalarProperty Name="DetailContainer" ColumnName="DetailContainer" />
+          <ScalarProperty Name="DetailPO" ColumnName="DetailPO" />
+          <ScalarProperty Name="DetailSO" ColumnName="DetailSO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPProjectContactor">
+      <EntityTypeMapping TypeName="CSPModel.CPProjectContactor">
+        <MappingFragment StoreEntitySet="CPProjectContactor">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="ContactorHQID" ColumnName="ContactorHQID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDT" ColumnName="CreatedDT" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDT" ColumnName="UpdatedDT" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPProjectDataSorting">
+      <EntityTypeMapping TypeName="CSPModel.CPProjectDataSorting">
+        <MappingFragment StoreEntitySet="CPProjectDataSorting">
+          <ScalarProperty Name="HQID" ColumnName="HQID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="ProductLine" ColumnName="ProductLine" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="FieldCode" ColumnName="FieldCode" />
+          <ScalarProperty Name="Orderby" ColumnName="Orderby" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="ShowName" ColumnName="ShowName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPProjectDataSortingFields">
+      <EntityTypeMapping TypeName="CSPModel.CPProjectDataSortingFields">
+        <MappingFragment StoreEntitySet="CPProjectDataSortingFields">
+          <ScalarProperty Name="HQID" ColumnName="HQID" />
+          <ScalarProperty Name="ProductLine" ColumnName="ProductLine" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ShowName" ColumnName="ShowName" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="Createdby" ColumnName="Createdby" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Updatedby" ColumnName="Updatedby" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPProjectMember">
+      <EntityTypeMapping TypeName="CSPModel.CPProjectMember">
+        <MappingFragment StoreEntitySet="CPProjectMember">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="MemberHQID" ColumnName="MemberHQID" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDT" ColumnName="CreatedDT" />
+          <ScalarProperty Name="IsReplicated" ColumnName="IsReplicated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPProjectTest">
+      <EntityTypeMapping TypeName="CSPModel.CPProjectTest">
+        <MappingFragment StoreEntitySet="CPProjectTest">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPProjectUser">
+      <EntityTypeMapping TypeName="CSPModel.CPProjectUser">
+        <MappingFragment StoreEntitySet="CPProjectUser">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="OwnerType" ColumnName="OwnerType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPRptChart">
+      <EntityTypeMapping TypeName="CSPModel.CPRptChart">
+        <MappingFragment StoreEntitySet="CPRptChart">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="ChartTitle" ColumnName="ChartTitle" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="IsInternal" ColumnName="IsInternal" />
+          <ScalarProperty Name="IsDisplayInHome" ColumnName="IsDisplayInHome" />
+          <ScalarProperty Name="ChartType" ColumnName="ChartType" />
+          <ScalarProperty Name="HorizontalTitle" ColumnName="HorizontalTitle" />
+          <ScalarProperty Name="HorizontalType" ColumnName="HorizontalType" />
+          <ScalarProperty Name="TimeItem" ColumnName="TimeItem" />
+          <ScalarProperty Name="LaneItem" ColumnName="LaneItem" />
+          <ScalarProperty Name="DayType" ColumnName="DayType" />
+          <ScalarProperty Name="LaneType" ColumnName="LaneType" />
+          <ScalarProperty Name="SpecColumn" ColumnName="SpecColumn" />
+          <ScalarProperty Name="VerticalTitle" ColumnName="VerticalTitle" />
+          <ScalarProperty Name="IsShowValue" ColumnName="IsShowValue" />
+          <ScalarProperty Name="MilestoneID" ColumnName="MilestoneID" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPRptChartDetail">
+      <EntityTypeMapping TypeName="CSPModel.CPRptChartDetail">
+        <MappingFragment StoreEntitySet="CPRptChartDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="MileStoneID" ColumnName="MileStoneID" />
+          <ScalarProperty Name="MileStoneDate" ColumnName="MileStoneDate" />
+          <ScalarProperty Name="MeasureTypeID" ColumnName="MeasureTypeID" />
+          <ScalarProperty Name="MeasureValue" ColumnName="MeasureValue" />
+          <ScalarProperty Name="OriginCityCode" ColumnName="OriginCityCode" />
+          <ScalarProperty Name="OriginCountryCode" ColumnName="OriginCountryCode" />
+          <ScalarProperty Name="DSTNCityCode" ColumnName="DSTNCityCode" />
+          <ScalarProperty Name="DSTNCountryCode" ColumnName="DSTNCountryCode" />
+          <ScalarProperty Name="Extra0" ColumnName="Extra0" />
+          <ScalarProperty Name="Extra1" ColumnName="Extra1" />
+          <ScalarProperty Name="Extra2" ColumnName="Extra2" />
+          <ScalarProperty Name="Extra3" ColumnName="Extra3" />
+          <ScalarProperty Name="Extra4" ColumnName="Extra4" />
+          <ScalarProperty Name="Extra5" ColumnName="Extra5" />
+          <ScalarProperty Name="Extra6" ColumnName="Extra6" />
+          <ScalarProperty Name="Extra7" ColumnName="Extra7" />
+          <ScalarProperty Name="Extra8" ColumnName="Extra8" />
+          <ScalarProperty Name="Extra9" ColumnName="Extra9" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPRptChartDetail_bak">
+      <EntityTypeMapping TypeName="CSPModel.CPRptChartDetail_bak">
+        <MappingFragment StoreEntitySet="CPRptChartDetail_bak">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="MileStoneID" ColumnName="MileStoneID" />
+          <ScalarProperty Name="MileStoneDate" ColumnName="MileStoneDate" />
+          <ScalarProperty Name="MeasureTypeID" ColumnName="MeasureTypeID" />
+          <ScalarProperty Name="MeasureValue" ColumnName="MeasureValue" />
+          <ScalarProperty Name="OriginCityCode" ColumnName="OriginCityCode" />
+          <ScalarProperty Name="OriginCountryCode" ColumnName="OriginCountryCode" />
+          <ScalarProperty Name="DSTNCityCode" ColumnName="DSTNCityCode" />
+          <ScalarProperty Name="DSTNCountryCode" ColumnName="DSTNCountryCode" />
+          <ScalarProperty Name="Extra0" ColumnName="Extra0" />
+          <ScalarProperty Name="Extra1" ColumnName="Extra1" />
+          <ScalarProperty Name="Extra2" ColumnName="Extra2" />
+          <ScalarProperty Name="Extra3" ColumnName="Extra3" />
+          <ScalarProperty Name="Extra4" ColumnName="Extra4" />
+          <ScalarProperty Name="Extra5" ColumnName="Extra5" />
+          <ScalarProperty Name="Extra6" ColumnName="Extra6" />
+          <ScalarProperty Name="Extra7" ColumnName="Extra7" />
+          <ScalarProperty Name="Extra8" ColumnName="Extra8" />
+          <ScalarProperty Name="Extra9" ColumnName="Extra9" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPRptChartMeasure">
+      <EntityTypeMapping TypeName="CSPModel.CPRptChartMeasure">
+        <MappingFragment StoreEntitySet="CPRptChartMeasure">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RptChartID" ColumnName="RptChartID" />
+          <ScalarProperty Name="LegendName" ColumnName="LegendName" />
+          <ScalarProperty Name="MeasureTypeID" ColumnName="MeasureTypeID" />
+          <ScalarProperty Name="MColor" ColumnName="MColor" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPRptChartMeasureType">
+      <EntityTypeMapping TypeName="CSPModel.CPRptChartMeasureType">
+        <MappingFragment StoreEntitySet="CPRptChartMeasureType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentMeasureTypeID" ColumnName="ParentMeasureTypeID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="TypeValue" ColumnName="TypeValue" />
+          <ScalarProperty Name="Conditions" ColumnName="Conditions" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPUIControl">
+      <EntityTypeMapping TypeName="CSPModel.CPUIControl">
+        <MappingFragment StoreEntitySet="CPUIControl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="PageCode" ColumnName="PageCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPUIControlDT">
+      <EntityTypeMapping TypeName="CSPModel.CPUIControlDT">
+        <MappingFragment StoreEntitySet="CPUIControlDT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="UIControlID" ColumnName="UIControlID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ShowMethod" ColumnName="ShowMethod" />
+          <ScalarProperty Name="ValidationRule" ColumnName="ValidationRule" />
+          <ScalarProperty Name="ClientEvent" ColumnName="ClientEvent" />
+          <ScalarProperty Name="ClientEventFun" ColumnName="ClientEventFun" />
+          <ScalarProperty Name="AliasText" ColumnName="AliasText" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="SeqNo" ColumnName="SeqNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EVAlertLog">
+      <EntityTypeMapping TypeName="CSPModel.EVAlertLog">
+        <MappingFragment StoreEntitySet="EVAlertLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="AlertID" ColumnName="AlertID" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="AlertType" ColumnName="AlertType" />
+          <ScalarProperty Name="Via" ColumnName="Via" />
+          <ScalarProperty Name="SendTo" ColumnName="SendTo" />
+          <ScalarProperty Name="ORG" ColumnName="ORG" />
+          <ScalarProperty Name="DSTN" ColumnName="DSTN" />
+          <ScalarProperty Name="ServiceLevel" ColumnName="ServiceLevel" />
+          <ScalarProperty Name="SendStatus" ColumnName="SendStatus" />
+          <ScalarProperty Name="SendTimes" ColumnName="SendTimes" />
+          <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+          <ScalarProperty Name="MailSubject" ColumnName="MailSubject" />
+          <ScalarProperty Name="MailContent" ColumnName="MailContent" />
+          <ScalarProperty Name="FailReason" ColumnName="FailReason" />
+          <ScalarProperty Name="M1Value" ColumnName="M1Value" />
+          <ScalarProperty Name="M2Value" ColumnName="M2Value" />
+          <ScalarProperty Name="M1UTCOffset" ColumnName="M1UTCOffset" />
+          <ScalarProperty Name="M2UTCOffset" ColumnName="M2UTCOffset" />
+          <ScalarProperty Name="SendToHQID" ColumnName="SendToHQID" />
+          <ScalarProperty Name="DocRefID" ColumnName="DocRefID" />
+          <ScalarProperty Name="ShipmentType" ColumnName="ShipmentType" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EVAlertParty">
+      <EntityTypeMapping TypeName="CSPModel.EVAlertParty">
+        <MappingFragment StoreEntitySet="EVAlertParty">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AlertID" ColumnName="AlertID" />
+          <ScalarProperty Name="SendToType" ColumnName="SendToType" />
+          <ScalarProperty Name="SendTo" ColumnName="SendTo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EVAlertSetting">
+      <EntityTypeMapping TypeName="CSPModel.EVAlertSetting">
+        <MappingFragment StoreEntitySet="EVAlertSetting">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="CreatedSource" ColumnName="CreatedSource" />
+          <ScalarProperty Name="AlertType" ColumnName="AlertType" />
+          <ScalarProperty Name="Via" ColumnName="Via" />
+          <ScalarProperty Name="ORG" ColumnName="ORG" />
+          <ScalarProperty Name="DSTN" ColumnName="DSTN" />
+          <ScalarProperty Name="ServiceLevel" ColumnName="ServiceLevel" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="ShipmentType" ColumnName="ShipmentType" />
+          <ScalarProperty Name="AirDoc" ColumnName="AirDoc" />
+          <ScalarProperty Name="OceanDoc" ColumnName="OceanDoc" />
+          <ScalarProperty Name="AlertRule" ColumnName="AlertRule" />
+          <ScalarProperty Name="Milestone1" ColumnName="Milestone1" />
+          <ScalarProperty Name="Milestone2" ColumnName="Milestone2" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Hours" ColumnName="Hours" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Updateby" ColumnName="Updateby" />
+          <ScalarProperty Name="Updatedate" ColumnName="Updatedate" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="ORGType" ColumnName="ORGType" />
+          <ScalarProperty Name="DSTNType" ColumnName="DSTNType" />
+          <ScalarProperty Name="TrackingDoc" ColumnName="TrackingDoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EVMailFormat">
+      <EntityTypeMapping TypeName="CSPModel.EVMailFormat">
+        <MappingFragment StoreEntitySet="EVMailFormat">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AlertID" ColumnName="AlertID" />
+          <ScalarProperty Name="MSubject" ColumnName="MSubject" />
+          <ScalarProperty Name="MContent" ColumnName="MContent" />
+          <ScalarProperty Name="Saveby" ColumnName="Saveby" />
+          <ScalarProperty Name="Savedate" ColumnName="Savedate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EVMailFormatContent">
+      <EntityTypeMapping TypeName="CSPModel.EVMailFormatContent">
+        <MappingFragment StoreEntitySet="EVMailFormatContent">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AliasCode" ColumnName="AliasCode" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Saveby" ColumnName="Saveby" />
+          <ScalarProperty Name="Savedate" ColumnName="Savedate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KPIDetail">
+      <EntityTypeMapping TypeName="CSPModel.KPIDetail">
+        <MappingFragment StoreEntitySet="KPIDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KPITypeID" ColumnName="KPITypeID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="RECV" ColumnName="RECV" />
+          <ScalarProperty Name="DEPT" ColumnName="DEPT" />
+          <ScalarProperty Name="DSTN" ColumnName="DSTN" />
+          <ScalarProperty Name="DELV" ColumnName="DELV" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Jan" ColumnName="Jan" />
+          <ScalarProperty Name="Feb" ColumnName="Feb" />
+          <ScalarProperty Name="Mar" ColumnName="Mar" />
+          <ScalarProperty Name="Apr" ColumnName="Apr" />
+          <ScalarProperty Name="May" ColumnName="May" />
+          <ScalarProperty Name="Jun" ColumnName="Jun" />
+          <ScalarProperty Name="Jul" ColumnName="Jul" />
+          <ScalarProperty Name="Aug" ColumnName="Aug" />
+          <ScalarProperty Name="Sep" ColumnName="Sep" />
+          <ScalarProperty Name="Oct" ColumnName="Oct" />
+          <ScalarProperty Name="Nov" ColumnName="Nov" />
+          <ScalarProperty Name="Dec" ColumnName="Dec" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KPIType">
+      <EntityTypeMapping TypeName="CSPModel.KPIType">
+        <MappingFragment StoreEntitySet="KPIType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProductLineID" ColumnName="ProductLineID" />
+          <ScalarProperty Name="TypeCode" ColumnName="TypeCode" />
+          <ScalarProperty Name="DataTable" ColumnName="DataTable" />
+          <ScalarProperty Name="DataColumn" ColumnName="DataColumn" />
+          <ScalarProperty Name="DataCalculate" ColumnName="DataCalculate" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="TypeDescription" ColumnName="TypeDescription" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Conditions" ColumnName="Conditions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KPITypeGroup">
+      <EntityTypeMapping TypeName="CSPModel.KPITypeGroup">
+        <MappingFragment StoreEntitySet="KPITypeGroup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KPITypeID" ColumnName="KPITypeID" />
+          <ScalarProperty Name="MilestoneHQID" ColumnName="MilestoneHQID" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MMMilestoneDetail">
+      <EntityTypeMapping TypeName="CSPModel.MMMilestoneDetail">
+        <MappingFragment StoreEntitySet="MMMilestoneDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MSID" ColumnName="MSID" />
+          <ScalarProperty Name="SeqNum" ColumnName="SeqNum" />
+          <ScalarProperty Name="MilestoneID" ColumnName="MilestoneID" />
+          <ScalarProperty Name="CustDesc" ColumnName="CustDesc" />
+          <ScalarProperty Name="IsMandatory" ColumnName="IsMandatory" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="IsReplicated" ColumnName="IsReplicated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MMMilestoneRule">
+      <EntityTypeMapping TypeName="CSPModel.MMMilestoneRule">
+        <MappingFragment StoreEntitySet="MMMilestoneRule">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MSID" ColumnName="MSID" />
+          <ScalarProperty Name="RuleName" ColumnName="RuleName" />
+          <ScalarProperty Name="OriginCountryID" ColumnName="OriginCountryID" />
+          <ScalarProperty Name="DestCountryID" ColumnName="DestCountryID" />
+          <ScalarProperty Name="OriginCityID" ColumnName="OriginCityID" />
+          <ScalarProperty Name="DestCityID" ColumnName="DestCityID" />
+          <ScalarProperty Name="ServiceLevel" ColumnName="ServiceLevel" />
+          <ScalarProperty Name="MilestonIDFrom" ColumnName="MilestonIDFrom" />
+          <ScalarProperty Name="MilestonIDTo" ColumnName="MilestonIDTo" />
+          <ScalarProperty Name="RuleTime" ColumnName="RuleTime" />
+          <ScalarProperty Name="RuleTimeUnit" ColumnName="RuleTimeUnit" />
+          <ScalarProperty Name="IsExceptionWeekend" ColumnName="IsExceptionWeekend" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MMMilestoneSetting">
+      <EntityTypeMapping TypeName="CSPModel.MMMilestoneSetting">
+        <MappingFragment StoreEntitySet="MMMilestoneSetting">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="ProductLineID" ColumnName="ProductLineID" />
+          <ScalarProperty Name="ViewType" ColumnName="ViewType" />
+          <ScalarProperty Name="MoveType" ColumnName="MoveType" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="SHPTTYPE" ColumnName="SHPTTYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSpeer_conflictdetectionconfigrequest">
+      <EntityTypeMapping TypeName="CSPModel.MSpeer_conflictdetectionconfigrequest">
+        <MappingFragment StoreEntitySet="MSpeer_conflictdetectionconfigrequest">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="publication" ColumnName="publication" />
+          <ScalarProperty Name="sent_date" ColumnName="sent_date" />
+          <ScalarProperty Name="timeout" ColumnName="timeout" />
+          <ScalarProperty Name="modified_date" ColumnName="modified_date" />
+          <ScalarProperty Name="progress_phase" ColumnName="progress_phase" />
+          <ScalarProperty Name="phase_timed_out" ColumnName="phase_timed_out" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSpeer_lsns">
+      <EntityTypeMapping TypeName="CSPModel.MSpeer_lsns">
+        <MappingFragment StoreEntitySet="MSpeer_lsns">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="last_updated" ColumnName="last_updated" />
+          <ScalarProperty Name="originator" ColumnName="originator" />
+          <ScalarProperty Name="originator_db" ColumnName="originator_db" />
+          <ScalarProperty Name="originator_publication" ColumnName="originator_publication" />
+          <ScalarProperty Name="originator_publication_id" ColumnName="originator_publication_id" />
+          <ScalarProperty Name="originator_db_version" ColumnName="originator_db_version" />
+          <ScalarProperty Name="originator_lsn" ColumnName="originator_lsn" />
+          <ScalarProperty Name="originator_version" ColumnName="originator_version" />
+          <ScalarProperty Name="originator_id" ColumnName="originator_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPContainerMilestoneFactData">
+      <EntityTypeMapping TypeName="CSPModel.OPContainerMilestoneFactData">
+        <MappingFragment StoreEntitySet="OPContainerMilestoneFactData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="ContainerNo" ColumnName="ContainerNo" />
+          <ScalarProperty Name="CM100" ColumnName="CM100" />
+          <ScalarProperty Name="CM200" ColumnName="CM200" />
+          <ScalarProperty Name="CM300" ColumnName="CM300" />
+          <ScalarProperty Name="CM400" ColumnName="CM400" />
+          <ScalarProperty Name="CM500" ColumnName="CM500" />
+          <ScalarProperty Name="CM600" ColumnName="CM600" />
+          <ScalarProperty Name="CM650" ColumnName="CM650" />
+          <ScalarProperty Name="CM700" ColumnName="CM700" />
+          <ScalarProperty Name="CM750" ColumnName="CM750" />
+          <ScalarProperty Name="CM800" ColumnName="CM800" />
+          <ScalarProperty Name="CM850" ColumnName="CM850" />
+          <ScalarProperty Name="CM900" ColumnName="CM900" />
+          <ScalarProperty Name="CM1000" ColumnName="CM1000" />
+          <ScalarProperty Name="CM1030" ColumnName="CM1030" />
+          <ScalarProperty Name="CM1050" ColumnName="CM1050" />
+          <ScalarProperty Name="CM1080" ColumnName="CM1080" />
+          <ScalarProperty Name="CM1100" ColumnName="CM1100" />
+          <ScalarProperty Name="CM1200" ColumnName="CM1200" />
+          <ScalarProperty Name="CM1300" ColumnName="CM1300" />
+          <ScalarProperty Name="CM1400" ColumnName="CM1400" />
+          <ScalarProperty Name="CM1600" ColumnName="CM1600" />
+          <ScalarProperty Name="CM1700" ColumnName="CM1700" />
+          <ScalarProperty Name="CM1800" ColumnName="CM1800" />
+          <ScalarProperty Name="CM1850" ColumnName="CM1850" />
+          <ScalarProperty Name="CM1900" ColumnName="CM1900" />
+          <ScalarProperty Name="CM2000" ColumnName="CM2000" />
+          <ScalarProperty Name="CM2100" ColumnName="CM2100" />
+          <ScalarProperty Name="CM2200" ColumnName="CM2200" />
+          <ScalarProperty Name="CM2300" ColumnName="CM2300" />
+          <ScalarProperty Name="CM2400" ColumnName="CM2400" />
+          <ScalarProperty Name="CM2500" ColumnName="CM2500" />
+          <ScalarProperty Name="CM2550" ColumnName="CM2550" />
+          <ScalarProperty Name="CM2600" ColumnName="CM2600" />
+          <ScalarProperty Name="CM2700" ColumnName="CM2700" />
+          <ScalarProperty Name="CM2800" ColumnName="CM2800" />
+          <ScalarProperty Name="CM2850" ColumnName="CM2850" />
+          <ScalarProperty Name="CM2900" ColumnName="CM2900" />
+          <ScalarProperty Name="CM2930" ColumnName="CM2930" />
+          <ScalarProperty Name="CM2950" ColumnName="CM2950" />
+          <ScalarProperty Name="CM2970" ColumnName="CM2970" />
+          <ScalarProperty Name="CM3000" ColumnName="CM3000" />
+          <ScalarProperty Name="CM3100" ColumnName="CM3100" />
+          <ScalarProperty Name="CM3200" ColumnName="CM3200" />
+          <ScalarProperty Name="CM3300" ColumnName="CM3300" />
+          <ScalarProperty Name="CM3400" ColumnName="CM3400" />
+          <ScalarProperty Name="CM3500" ColumnName="CM3500" />
+          <ScalarProperty Name="CM8000" ColumnName="CM8000" />
+          <ScalarProperty Name="CM100050" ColumnName="CM100050" />
+          <ScalarProperty Name="CM100100" ColumnName="CM100100" />
+          <ScalarProperty Name="CM100130" ColumnName="CM100130" />
+          <ScalarProperty Name="CM100150" ColumnName="CM100150" />
+          <ScalarProperty Name="CM100170" ColumnName="CM100170" />
+          <ScalarProperty Name="CM100200" ColumnName="CM100200" />
+          <ScalarProperty Name="CM100300" ColumnName="CM100300" />
+          <ScalarProperty Name="CM100400" ColumnName="CM100400" />
+          <ScalarProperty Name="CM100500" ColumnName="CM100500" />
+          <ScalarProperty Name="CM100600" ColumnName="CM100600" />
+          <ScalarProperty Name="CM100700" ColumnName="CM100700" />
+          <ScalarProperty Name="CM100800" ColumnName="CM100800" />
+          <ScalarProperty Name="CM100900" ColumnName="CM100900" />
+          <ScalarProperty Name="CM101000" ColumnName="CM101000" />
+          <ScalarProperty Name="CM101100" ColumnName="CM101100" />
+          <ScalarProperty Name="CM101150" ColumnName="CM101150" />
+          <ScalarProperty Name="CM101200" ColumnName="CM101200" />
+          <ScalarProperty Name="CM101300" ColumnName="CM101300" />
+          <ScalarProperty Name="CM101400" ColumnName="CM101400" />
+          <ScalarProperty Name="CM101500" ColumnName="CM101500" />
+          <ScalarProperty Name="CM101600" ColumnName="CM101600" />
+          <ScalarProperty Name="CM101650" ColumnName="CM101650" />
+          <ScalarProperty Name="CM101700" ColumnName="CM101700" />
+          <ScalarProperty Name="CM101800" ColumnName="CM101800" />
+          <ScalarProperty Name="CM101900" ColumnName="CM101900" />
+          <ScalarProperty Name="CM102000" ColumnName="CM102000" />
+          <ScalarProperty Name="CM102100" ColumnName="CM102100" />
+          <ScalarProperty Name="CM102200" ColumnName="CM102200" />
+          <ScalarProperty Name="CM102300" ColumnName="CM102300" />
+          <ScalarProperty Name="CM102400" ColumnName="CM102400" />
+          <ScalarProperty Name="CM102500" ColumnName="CM102500" />
+          <ScalarProperty Name="CM102600" ColumnName="CM102600" />
+          <ScalarProperty Name="CM102700" ColumnName="CM102700" />
+          <ScalarProperty Name="CM102900" ColumnName="CM102900" />
+          <ScalarProperty Name="CM103000" ColumnName="CM103000" />
+          <ScalarProperty Name="CM103100" ColumnName="CM103100" />
+          <ScalarProperty Name="CM103200" ColumnName="CM103200" />
+          <ScalarProperty Name="CM103300" ColumnName="CM103300" />
+          <ScalarProperty Name="CM103400" ColumnName="CM103400" />
+          <ScalarProperty Name="CM103500" ColumnName="CM103500" />
+          <ScalarProperty Name="CM103600" ColumnName="CM103600" />
+          <ScalarProperty Name="CM103700" ColumnName="CM103700" />
+          <ScalarProperty Name="CM103800" ColumnName="CM103800" />
+          <ScalarProperty Name="CM103900" ColumnName="CM103900" />
+          <ScalarProperty Name="CM104000" ColumnName="CM104000" />
+          <ScalarProperty Name="CM104100" ColumnName="CM104100" />
+          <ScalarProperty Name="CM104200" ColumnName="CM104200" />
+          <ScalarProperty Name="CM104300" ColumnName="CM104300" />
+          <ScalarProperty Name="CM104400" ColumnName="CM104400" />
+          <ScalarProperty Name="CM104500" ColumnName="CM104500" />
+          <ScalarProperty Name="CM104600" ColumnName="CM104600" />
+          <ScalarProperty Name="CM104700" ColumnName="CM104700" />
+          <ScalarProperty Name="CM104800" ColumnName="CM104800" />
+          <ScalarProperty Name="CM104900" ColumnName="CM104900" />
+          <ScalarProperty Name="CM104950" ColumnName="CM104950" />
+          <ScalarProperty Name="CM105000" ColumnName="CM105000" />
+          <ScalarProperty Name="CM105100" ColumnName="CM105100" />
+          <ScalarProperty Name="CM105200" ColumnName="CM105200" />
+          <ScalarProperty Name="CM105300" ColumnName="CM105300" />
+          <ScalarProperty Name="CM105400" ColumnName="CM105400" />
+          <ScalarProperty Name="CM105500" ColumnName="CM105500" />
+          <ScalarProperty Name="CM105550" ColumnName="CM105550" />
+          <ScalarProperty Name="CM105600" ColumnName="CM105600" />
+          <ScalarProperty Name="CM105700" ColumnName="CM105700" />
+          <ScalarProperty Name="CM105800" ColumnName="CM105800" />
+          <ScalarProperty Name="CM105900" ColumnName="CM105900" />
+          <ScalarProperty Name="CM106000" ColumnName="CM106000" />
+          <ScalarProperty Name="CM108000" ColumnName="CM108000" />
+          <ScalarProperty Name="CM1750" ColumnName="CM1750" />
+          <ScalarProperty Name="CM102950" ColumnName="CM102950" />
+          <ScalarProperty Name="CM101750" ColumnName="CM101750" />
+          <ScalarProperty Name="CM101760" ColumnName="CM101760" />
+          <ScalarProperty Name="CM101810" ColumnName="CM101810" />
+          <ScalarProperty Name="CM101820" ColumnName="CM101820" />
+          <ScalarProperty Name="CM101850" ColumnName="CM101850" />
+          <ScalarProperty Name="CM101860" ColumnName="CM101860" />
+          <ScalarProperty Name="CM101910" ColumnName="CM101910" />
+          <ScalarProperty Name="CM101920" ColumnName="CM101920" />
+          <ScalarProperty Name="CM1320" ColumnName="CM1320" />
+          <ScalarProperty Name="CM1330" ColumnName="CM1330" />
+          <ScalarProperty Name="CM1340" ColumnName="CM1340" />
+          <ScalarProperty Name="CM1350" ColumnName="CM1350" />
+          <ScalarProperty Name="CM1360" ColumnName="CM1360" />
+          <ScalarProperty Name="CM101930" ColumnName="CM101930" />
+          <ScalarProperty Name="CM101940" ColumnName="CM101940" />
+          <ScalarProperty Name="CM101950" ColumnName="CM101950" />
+          <ScalarProperty Name="CM101960" ColumnName="CM101960" />
+          <ScalarProperty Name="CM101970" ColumnName="CM101970" />
+          <ScalarProperty Name="CM1090" ColumnName="CM1090" />
+          <ScalarProperty Name="CM1310" ColumnName="CM1310" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPInvoiceData">
+      <EntityTypeMapping TypeName="CSPModel.OPInvoiceData">
+        <MappingFragment StoreEntitySet="OPInvoiceData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="DIMInvoiceNo" ColumnName="DIMInvoiceNo" />
+          <ScalarProperty Name="BillTO" ColumnName="BillTO" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="BillToName" ColumnName="BillToName" />
+          <ScalarProperty Name="BillToCode" ColumnName="BillToCode" />
+          <ScalarProperty Name="InvoiceAmount" ColumnName="InvoiceAmount" />
+          <ScalarProperty Name="InvoicePaytype" ColumnName="InvoicePaytype" />
+          <ScalarProperty Name="InvConfirmID" ColumnName="InvConfirmID" />
+          <ScalarProperty Name="EstFRTSales" ColumnName="EstFRTSales" />
+          <ScalarProperty Name="EstOtherSales" ColumnName="EstOtherSales" />
+          <ScalarProperty Name="IncalculableItem" ColumnName="IncalculableItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPInvoiceData_Jane">
+      <EntityTypeMapping TypeName="CSPModel.OPInvoiceData_Jane">
+        <MappingFragment StoreEntitySet="OPInvoiceData_Jane">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="DIMInvoiceNo" ColumnName="DIMInvoiceNo" />
+          <ScalarProperty Name="BillTO" ColumnName="BillTO" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="BillToName" ColumnName="BillToName" />
+          <ScalarProperty Name="BillToCode" ColumnName="BillToCode" />
+          <ScalarProperty Name="InvoiceAmount" ColumnName="InvoiceAmount" />
+          <ScalarProperty Name="InvoicePaytype" ColumnName="InvoicePaytype" />
+          <ScalarProperty Name="InvConfirmID" ColumnName="InvConfirmID" />
+          <ScalarProperty Name="EstFRTSales" ColumnName="EstFRTSales" />
+          <ScalarProperty Name="EstOtherSales" ColumnName="EstOtherSales" />
+          <ScalarProperty Name="IncalculableItem" ColumnName="IncalculableItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPInvoiceDataDetail">
+      <EntityTypeMapping TypeName="CSPModel.OPInvoiceDataDetail">
+        <MappingFragment StoreEntitySet="OPInvoiceDataDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="DIMInvoiceNoD" ColumnName="DIMInvoiceNoD" />
+          <ScalarProperty Name="BillToNameD" ColumnName="BillToNameD" />
+          <ScalarProperty Name="BillToCodeD" ColumnName="BillToCodeD" />
+          <ScalarProperty Name="BillTOD" ColumnName="BillTOD" />
+          <ScalarProperty Name="InvoiceDateD" ColumnName="InvoiceDateD" />
+          <ScalarProperty Name="InvoiceAmountD" ColumnName="InvoiceAmountD" />
+          <ScalarProperty Name="InvoicePaytypeD" ColumnName="InvoicePaytypeD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPMilestoneData">
+      <EntityTypeMapping TypeName="CSPModel.OPMilestoneData">
+        <MappingFragment StoreEntitySet="OPMilestoneData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="MilestoneID" ColumnName="MilestoneID" />
+          <ScalarProperty Name="DateValue" ColumnName="DateValue" />
+          <ScalarProperty Name="UTCTime" ColumnName="UTCTime" />
+          <ScalarProperty Name="MilestoneName" ColumnName="MilestoneName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UTCOffSet" ColumnName="UTCOffSet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPMilestoneFactData">
+      <EntityTypeMapping TypeName="CSPModel.OPMilestoneFactData">
+        <MappingFragment StoreEntitySet="OPMilestoneFactData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="CurrentMilestoneID" ColumnName="CurrentMilestoneID" />
+          <ScalarProperty Name="CurrentMilestone" ColumnName="CurrentMilestone" />
+          <ScalarProperty Name="CurrentMilestone_ALL_ID" ColumnName="CurrentMilestone_ALL_ID" />
+          <ScalarProperty Name="CurrentMilestone_ALL" ColumnName="CurrentMilestone_ALL" />
+          <ScalarProperty Name="CurrentMilestone_Cus_ID" ColumnName="CurrentMilestone_Cus_ID" />
+          <ScalarProperty Name="CurrentMilestone_Cus" ColumnName="CurrentMilestone_Cus" />
+          <ScalarProperty Name="CurrentMilestone_WT_ID" ColumnName="CurrentMilestone_WT_ID" />
+          <ScalarProperty Name="CurrentMilestone_WT" ColumnName="CurrentMilestone_WT" />
+          <ScalarProperty Name="M100" ColumnName="M100" />
+          <ScalarProperty Name="M200" ColumnName="M200" />
+          <ScalarProperty Name="M300" ColumnName="M300" />
+          <ScalarProperty Name="M400" ColumnName="M400" />
+          <ScalarProperty Name="M500" ColumnName="M500" />
+          <ScalarProperty Name="M600" ColumnName="M600" />
+          <ScalarProperty Name="M650" ColumnName="M650" />
+          <ScalarProperty Name="M700" ColumnName="M700" />
+          <ScalarProperty Name="M750" ColumnName="M750" />
+          <ScalarProperty Name="M800" ColumnName="M800" />
+          <ScalarProperty Name="M850" ColumnName="M850" />
+          <ScalarProperty Name="M900" ColumnName="M900" />
+          <ScalarProperty Name="M1000" ColumnName="M1000" />
+          <ScalarProperty Name="M1030" ColumnName="M1030" />
+          <ScalarProperty Name="M1050" ColumnName="M1050" />
+          <ScalarProperty Name="M1080" ColumnName="M1080" />
+          <ScalarProperty Name="M1100" ColumnName="M1100" />
+          <ScalarProperty Name="M1200" ColumnName="M1200" />
+          <ScalarProperty Name="M1300" ColumnName="M1300" />
+          <ScalarProperty Name="M1400" ColumnName="M1400" />
+          <ScalarProperty Name="M1600" ColumnName="M1600" />
+          <ScalarProperty Name="M1700" ColumnName="M1700" />
+          <ScalarProperty Name="M1800" ColumnName="M1800" />
+          <ScalarProperty Name="M1850" ColumnName="M1850" />
+          <ScalarProperty Name="M1900" ColumnName="M1900" />
+          <ScalarProperty Name="M2000" ColumnName="M2000" />
+          <ScalarProperty Name="M2100" ColumnName="M2100" />
+          <ScalarProperty Name="M2200" ColumnName="M2200" />
+          <ScalarProperty Name="M2300" ColumnName="M2300" />
+          <ScalarProperty Name="M2400" ColumnName="M2400" />
+          <ScalarProperty Name="M2500" ColumnName="M2500" />
+          <ScalarProperty Name="M2550" ColumnName="M2550" />
+          <ScalarProperty Name="M2600" ColumnName="M2600" />
+          <ScalarProperty Name="M2700" ColumnName="M2700" />
+          <ScalarProperty Name="M2800" ColumnName="M2800" />
+          <ScalarProperty Name="M2850" ColumnName="M2850" />
+          <ScalarProperty Name="M2900" ColumnName="M2900" />
+          <ScalarProperty Name="M2930" ColumnName="M2930" />
+          <ScalarProperty Name="M2950" ColumnName="M2950" />
+          <ScalarProperty Name="M2970" ColumnName="M2970" />
+          <ScalarProperty Name="M3000" ColumnName="M3000" />
+          <ScalarProperty Name="M3100" ColumnName="M3100" />
+          <ScalarProperty Name="M3200" ColumnName="M3200" />
+          <ScalarProperty Name="M3300" ColumnName="M3300" />
+          <ScalarProperty Name="M3400" ColumnName="M3400" />
+          <ScalarProperty Name="M3500" ColumnName="M3500" />
+          <ScalarProperty Name="M8000" ColumnName="M8000" />
+          <ScalarProperty Name="M100050" ColumnName="M100050" />
+          <ScalarProperty Name="M100100" ColumnName="M100100" />
+          <ScalarProperty Name="M100130" ColumnName="M100130" />
+          <ScalarProperty Name="M100150" ColumnName="M100150" />
+          <ScalarProperty Name="M100170" ColumnName="M100170" />
+          <ScalarProperty Name="M100200" ColumnName="M100200" />
+          <ScalarProperty Name="M100300" ColumnName="M100300" />
+          <ScalarProperty Name="M100400" ColumnName="M100400" />
+          <ScalarProperty Name="M100500" ColumnName="M100500" />
+          <ScalarProperty Name="M100600" ColumnName="M100600" />
+          <ScalarProperty Name="M100700" ColumnName="M100700" />
+          <ScalarProperty Name="M100800" ColumnName="M100800" />
+          <ScalarProperty Name="M100900" ColumnName="M100900" />
+          <ScalarProperty Name="M101000" ColumnName="M101000" />
+          <ScalarProperty Name="M101100" ColumnName="M101100" />
+          <ScalarProperty Name="M101150" ColumnName="M101150" />
+          <ScalarProperty Name="M101200" ColumnName="M101200" />
+          <ScalarProperty Name="M101300" ColumnName="M101300" />
+          <ScalarProperty Name="M101400" ColumnName="M101400" />
+          <ScalarProperty Name="M101500" ColumnName="M101500" />
+          <ScalarProperty Name="M101600" ColumnName="M101600" />
+          <ScalarProperty Name="M101650" ColumnName="M101650" />
+          <ScalarProperty Name="M101700" ColumnName="M101700" />
+          <ScalarProperty Name="M101800" ColumnName="M101800" />
+          <ScalarProperty Name="M101900" ColumnName="M101900" />
+          <ScalarProperty Name="M102000" ColumnName="M102000" />
+          <ScalarProperty Name="M102100" ColumnName="M102100" />
+          <ScalarProperty Name="M102200" ColumnName="M102200" />
+          <ScalarProperty Name="M102300" ColumnName="M102300" />
+          <ScalarProperty Name="M102400" ColumnName="M102400" />
+          <ScalarProperty Name="M102500" ColumnName="M102500" />
+          <ScalarProperty Name="M102600" ColumnName="M102600" />
+          <ScalarProperty Name="M102700" ColumnName="M102700" />
+          <ScalarProperty Name="M102900" ColumnName="M102900" />
+          <ScalarProperty Name="M103000" ColumnName="M103000" />
+          <ScalarProperty Name="M103100" ColumnName="M103100" />
+          <ScalarProperty Name="M103200" ColumnName="M103200" />
+          <ScalarProperty Name="M103300" ColumnName="M103300" />
+          <ScalarProperty Name="M103400" ColumnName="M103400" />
+          <ScalarProperty Name="M103500" ColumnName="M103500" />
+          <ScalarProperty Name="M103600" ColumnName="M103600" />
+          <ScalarProperty Name="M103700" ColumnName="M103700" />
+          <ScalarProperty Name="M103800" ColumnName="M103800" />
+          <ScalarProperty Name="M103900" ColumnName="M103900" />
+          <ScalarProperty Name="M104000" ColumnName="M104000" />
+          <ScalarProperty Name="M104100" ColumnName="M104100" />
+          <ScalarProperty Name="M104200" ColumnName="M104200" />
+          <ScalarProperty Name="M104300" ColumnName="M104300" />
+          <ScalarProperty Name="M104400" ColumnName="M104400" />
+          <ScalarProperty Name="M104500" ColumnName="M104500" />
+          <ScalarProperty Name="M104600" ColumnName="M104600" />
+          <ScalarProperty Name="M104700" ColumnName="M104700" />
+          <ScalarProperty Name="M104800" ColumnName="M104800" />
+          <ScalarProperty Name="M104900" ColumnName="M104900" />
+          <ScalarProperty Name="M104950" ColumnName="M104950" />
+          <ScalarProperty Name="M105000" ColumnName="M105000" />
+          <ScalarProperty Name="M105100" ColumnName="M105100" />
+          <ScalarProperty Name="M105200" ColumnName="M105200" />
+          <ScalarProperty Name="M105300" ColumnName="M105300" />
+          <ScalarProperty Name="M105400" ColumnName="M105400" />
+          <ScalarProperty Name="M105500" ColumnName="M105500" />
+          <ScalarProperty Name="M105550" ColumnName="M105550" />
+          <ScalarProperty Name="M105600" ColumnName="M105600" />
+          <ScalarProperty Name="M105700" ColumnName="M105700" />
+          <ScalarProperty Name="M105800" ColumnName="M105800" />
+          <ScalarProperty Name="M105900" ColumnName="M105900" />
+          <ScalarProperty Name="M106000" ColumnName="M106000" />
+          <ScalarProperty Name="M108000" ColumnName="M108000" />
+          <ScalarProperty Name="M1750" ColumnName="M1750" />
+          <ScalarProperty Name="M102950" ColumnName="M102950" />
+          <ScalarProperty Name="M101750" ColumnName="M101750" />
+          <ScalarProperty Name="M101760" ColumnName="M101760" />
+          <ScalarProperty Name="M101810" ColumnName="M101810" />
+          <ScalarProperty Name="M101820" ColumnName="M101820" />
+          <ScalarProperty Name="M101850" ColumnName="M101850" />
+          <ScalarProperty Name="M101860" ColumnName="M101860" />
+          <ScalarProperty Name="M101910" ColumnName="M101910" />
+          <ScalarProperty Name="M101920" ColumnName="M101920" />
+          <ScalarProperty Name="M1320" ColumnName="M1320" />
+          <ScalarProperty Name="M1330" ColumnName="M1330" />
+          <ScalarProperty Name="M1340" ColumnName="M1340" />
+          <ScalarProperty Name="M1350" ColumnName="M1350" />
+          <ScalarProperty Name="M1360" ColumnName="M1360" />
+          <ScalarProperty Name="M101930" ColumnName="M101930" />
+          <ScalarProperty Name="M101940" ColumnName="M101940" />
+          <ScalarProperty Name="M101950" ColumnName="M101950" />
+          <ScalarProperty Name="M101960" ColumnName="M101960" />
+          <ScalarProperty Name="M101970" ColumnName="M101970" />
+          <ScalarProperty Name="CurrentMilestone_Category" ColumnName="CurrentMilestone_Category" />
+          <ScalarProperty Name="CurrentMilestone_ALL_Category" ColumnName="CurrentMilestone_ALL_Category" />
+          <ScalarProperty Name="CurrentMilestone_Cus_Category" ColumnName="CurrentMilestone_Cus_Category" />
+          <ScalarProperty Name="CurrentMilestone_WT_Category" ColumnName="CurrentMilestone_WT_Category" />
+          <ScalarProperty Name="M1090" ColumnName="M1090" />
+          <ScalarProperty Name="M1310" ColumnName="M1310" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPPOData">
+      <EntityTypeMapping TypeName="CSPModel.OPPOData">
+        <MappingFragment StoreEntitySet="OPPOData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="PONo" ColumnName="PONo" />
+          <ScalarProperty Name="CommInvNo" ColumnName="CommInvNo" />
+          <ScalarProperty Name="CommInvCurr" ColumnName="CommInvCurr" />
+          <ScalarProperty Name="CommInvAmt" ColumnName="CommInvAmt" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="POExtra1" ColumnName="POExtra1" />
+          <ScalarProperty Name="POExtra2" ColumnName="POExtra2" />
+          <ScalarProperty Name="POExtra3" ColumnName="POExtra3" />
+          <ScalarProperty Name="POExtra4" ColumnName="POExtra4" />
+          <ScalarProperty Name="POExtra5" ColumnName="POExtra5" />
+          <ScalarProperty Name="POExtra6" ColumnName="POExtra6" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="CTNS" ColumnName="CTNS" />
+          <ScalarProperty Name="PORemark" ColumnName="PORemark" />
+          <ScalarProperty Name="POItemNo" ColumnName="POItemNo" />
+          <ScalarProperty Name="POSONo" ColumnName="POSONo" />
+          <ScalarProperty Name="CommInvDate" ColumnName="CommInvDate" />
+          <ScalarProperty Name="POFinalDSTN" ColumnName="POFinalDSTN" />
+          <ScalarProperty Name="CusPoData1" ColumnName="CusPoData1" />
+          <ScalarProperty Name="CusPoData2" ColumnName="CusPoData2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPShipmentData">
+      <EntityTypeMapping TypeName="CSPModel.OPShipmentData">
+        <MappingFragment StoreEntitySet="OPShipmentData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="IDType" ColumnName="IDType" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MasterNo" ColumnName="MasterNo" />
+          <ScalarProperty Name="HouseNo" ColumnName="HouseNo" />
+          <ScalarProperty Name="ESkirtSID" ColumnName="ESkirtSID" />
+          <ScalarProperty Name="ESkirtHID" ColumnName="ESkirtHID" />
+          <ScalarProperty Name="ESkirtMID" ColumnName="ESkirtMID" />
+          <ScalarProperty Name="MStationID" ColumnName="MStationID" />
+          <ScalarProperty Name="EHubSID" ColumnName="EHubSID" />
+          <ScalarProperty Name="EHubHID" ColumnName="EHubHID" />
+          <ScalarProperty Name="IHubSID" ColumnName="IHubSID" />
+          <ScalarProperty Name="IHubHID" ColumnName="IHubHID" />
+          <ScalarProperty Name="ISkirtSID" ColumnName="ISkirtSID" />
+          <ScalarProperty Name="ISkirtHID" ColumnName="ISkirtHID" />
+          <ScalarProperty Name="ISkirtMID" ColumnName="ISkirtMID" />
+          <ScalarProperty Name="ISkirtMSID" ColumnName="ISkirtMSID" />
+          <ScalarProperty Name="ELotNo" ColumnName="ELotNo" />
+          <ScalarProperty Name="ILotNo" ColumnName="ILotNo" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="OriginCityCode" ColumnName="OriginCityCode" />
+          <ScalarProperty Name="OriginCityName" ColumnName="OriginCityName" />
+          <ScalarProperty Name="OriginCountryCode" ColumnName="OriginCountryCode" />
+          <ScalarProperty Name="OriginCountryName" ColumnName="OriginCountryName" />
+          <ScalarProperty Name="POL" ColumnName="POL" />
+          <ScalarProperty Name="POLCode" ColumnName="POLCode" />
+          <ScalarProperty Name="POLName" ColumnName="POLName" />
+          <ScalarProperty Name="POLCountryCode" ColumnName="POLCountryCode" />
+          <ScalarProperty Name="POLCountryName" ColumnName="POLCountryName" />
+          <ScalarProperty Name="POD" ColumnName="POD" />
+          <ScalarProperty Name="PODCode" ColumnName="PODCode" />
+          <ScalarProperty Name="PODName" ColumnName="PODName" />
+          <ScalarProperty Name="PODCountryCode" ColumnName="PODCountryCode" />
+          <ScalarProperty Name="PODCountryName" ColumnName="PODCountryName" />
+          <ScalarProperty Name="DSTN" ColumnName="DSTN" />
+          <ScalarProperty Name="DSTNCityCode" ColumnName="DSTNCityCode" />
+          <ScalarProperty Name="DSTNCityName" ColumnName="DSTNCityName" />
+          <ScalarProperty Name="DSTNCountryCode" ColumnName="DSTNCountryCode" />
+          <ScalarProperty Name="DSTNCountryName" ColumnName="DSTNCountryName" />
+          <ScalarProperty Name="Shipper" ColumnName="Shipper" />
+          <ScalarProperty Name="ShipperCode" ColumnName="ShipperCode" />
+          <ScalarProperty Name="ShipperName" ColumnName="ShipperName" />
+          <ScalarProperty Name="HouseShipperName" ColumnName="HouseShipperName" />
+          <ScalarProperty Name="HouseShipperAddr" ColumnName="HouseShipperAddr" />
+          <ScalarProperty Name="CNEE" ColumnName="CNEE" />
+          <ScalarProperty Name="CNEECode" ColumnName="CNEECode" />
+          <ScalarProperty Name="CNEEName" ColumnName="CNEEName" />
+          <ScalarProperty Name="HouseCNEEName" ColumnName="HouseCNEEName" />
+          <ScalarProperty Name="HouseCNEEAddr" ColumnName="HouseCNEEAddr" />
+          <ScalarProperty Name="Notify" ColumnName="Notify" />
+          <ScalarProperty Name="NotifyCode" ColumnName="NotifyCode" />
+          <ScalarProperty Name="NotifyName" ColumnName="NotifyName" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="ServiceLevel" ColumnName="ServiceLevel" />
+          <ScalarProperty Name="TradeTerm" ColumnName="TradeTerm" />
+          <ScalarProperty Name="Move" ColumnName="Move" />
+          <ScalarProperty Name="BookedFLT" ColumnName="BookedFLT" />
+          <ScalarProperty Name="OnBoardFLT" ColumnName="OnBoardFLT" />
+          <ScalarProperty Name="Vessel" ColumnName="Vessel" />
+          <ScalarProperty Name="Voyage" ColumnName="Voyage" />
+          <ScalarProperty Name="CWT" ColumnName="CWT" />
+          <ScalarProperty Name="CWTUOM" ColumnName="CWTUOM" />
+          <ScalarProperty Name="GWT" ColumnName="GWT" />
+          <ScalarProperty Name="GWTUOM" ColumnName="GWTUOM" />
+          <ScalarProperty Name="PCS" ColumnName="PCS" />
+          <ScalarProperty Name="PCSUOM" ColumnName="PCSUOM" />
+          <ScalarProperty Name="CBM" ColumnName="CBM" />
+          <ScalarProperty Name="TEU" ColumnName="TEU" />
+          <ScalarProperty Name="C20" ColumnName="C20" />
+          <ScalarProperty Name="C40" ColumnName="C40" />
+          <ScalarProperty Name="C40H" ColumnName="C40H" />
+          <ScalarProperty Name="C45" ColumnName="C45" />
+          <ScalarProperty Name="OtherCNTR" ColumnName="OtherCNTR" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DIMINV" ColumnName="DIMINV" />
+          <ScalarProperty Name="CTNRNo" ColumnName="CTNRNo" />
+          <ScalarProperty Name="PickAddr" ColumnName="PickAddr" />
+          <ScalarProperty Name="DELVAddr" ColumnName="DELVAddr" />
+          <ScalarProperty Name="PickPCS" ColumnName="PickPCS" />
+          <ScalarProperty Name="PickPCSUOM" ColumnName="PickPCSUOM" />
+          <ScalarProperty Name="PickWeight" ColumnName="PickWeight" />
+          <ScalarProperty Name="PickWeightUOM" ColumnName="PickWeightUOM" />
+          <ScalarProperty Name="ActualPickup" ColumnName="ActualPickup" />
+          <ScalarProperty Name="PickRemark" ColumnName="PickRemark" />
+          <ScalarProperty Name="VWT" ColumnName="VWT" />
+          <ScalarProperty Name="Volumn" ColumnName="Volumn" />
+          <ScalarProperty Name="Extra0" ColumnName="Extra0" />
+          <ScalarProperty Name="Extra1" ColumnName="Extra1" />
+          <ScalarProperty Name="Extra2" ColumnName="Extra2" />
+          <ScalarProperty Name="Extra3" ColumnName="Extra3" />
+          <ScalarProperty Name="Extra4" ColumnName="Extra4" />
+          <ScalarProperty Name="Extra5" ColumnName="Extra5" />
+          <ScalarProperty Name="Extra6" ColumnName="Extra6" />
+          <ScalarProperty Name="Extra7" ColumnName="Extra7" />
+          <ScalarProperty Name="Extra8" ColumnName="Extra8" />
+          <ScalarProperty Name="Extra9" ColumnName="Extra9" />
+          <ScalarProperty Name="SCHCargoSignBy" ColumnName="SCHCargoSignBy" />
+          <ScalarProperty Name="HRemark" ColumnName="HRemark" />
+          <ScalarProperty Name="MasterCarrier" ColumnName="MasterCarrier" />
+          <ScalarProperty Name="MasterCarrierCode" ColumnName="MasterCarrierCode" />
+          <ScalarProperty Name="MasterCarrierName" ColumnName="MasterCarrierName" />
+          <ScalarProperty Name="OwnerUserID" ColumnName="OwnerUserID" />
+          <ScalarProperty Name="OwnerUserName" ColumnName="OwnerUserName" />
+          <ScalarProperty Name="OwnerStationID" ColumnName="OwnerStationID" />
+          <ScalarProperty Name="OwnerStationCode" ColumnName="OwnerStationCode" />
+          <ScalarProperty Name="GWT_KG" ColumnName="GWT_KG" />
+          <ScalarProperty Name="CWT_KG" ColumnName="CWT_KG" />
+          <ScalarProperty Name="GoodsDescription" ColumnName="GoodsDescription" />
+          <ScalarProperty Name="OMSMoveType" ColumnName="OMSMoveType" />
+          <ScalarProperty Name="SPUnit" ColumnName="SPUnit" />
+          <ScalarProperty Name="SPUnitUOM" ColumnName="SPUnitUOM" />
+          <ScalarProperty Name="ReasonCode" ColumnName="ReasonCode" />
+          <ScalarProperty Name="ReasonName" ColumnName="ReasonName" />
+          <ScalarProperty Name="ReasonDescription" ColumnName="ReasonDescription" />
+          <ScalarProperty Name="FLTPeriod" ColumnName="FLTPeriod" />
+          <ScalarProperty Name="TPSID" ColumnName="TPSID" />
+          <ScalarProperty Name="TPHID" ColumnName="TPHID" />
+          <ScalarProperty Name="HandlingCode" ColumnName="HandlingCode" />
+          <ScalarProperty Name="HandlingCodeCategory" ColumnName="HandlingCodeCategory" />
+          <ScalarProperty Name="FCLCBM" ColumnName="FCLCBM" />
+          <ScalarProperty Name="CTNRType" ColumnName="CTNRType" />
+          <ScalarProperty Name="EAirPortCode" ColumnName="EAirPortCode" />
+          <ScalarProperty Name="EAirPortName" ColumnName="EAirPortName" />
+          <ScalarProperty Name="IAirPortCode" ColumnName="IAirPortCode" />
+          <ScalarProperty Name="IAirPortName" ColumnName="IAirPortName" />
+          <ScalarProperty Name="FlightRoute" ColumnName="FlightRoute" />
+          <ScalarProperty Name="ConfirmID" ColumnName="ConfirmID" />
+          <ScalarProperty Name="FCalculateType" ColumnName="FCalculateType" />
+          <ScalarProperty Name="RevenueTon" ColumnName="RevenueTon" />
+          <ScalarProperty Name="FreightPayType" ColumnName="FreightPayType" />
+          <ScalarProperty Name="StrShiptype" ColumnName="StrShiptype" />
+          <ScalarProperty Name="ClassRate" ColumnName="ClassRate" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="IsCalculateInv" ColumnName="IsCalculateInv" />
+          <ScalarProperty Name="ReasonMilestoneID" ColumnName="ReasonMilestoneID" />
+          <ScalarProperty Name="ReasonMilestoneName" ColumnName="ReasonMilestoneName" />
+          <ScalarProperty Name="ReasonOccurrenceDate" ColumnName="ReasonOccurrenceDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPShipmentData_Jane">
+      <EntityTypeMapping TypeName="CSPModel.OPShipmentData_Jane">
+        <MappingFragment StoreEntitySet="OPShipmentData_Jane">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="IDType" ColumnName="IDType" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MasterNo" ColumnName="MasterNo" />
+          <ScalarProperty Name="HouseNo" ColumnName="HouseNo" />
+          <ScalarProperty Name="ESkirtSID" ColumnName="ESkirtSID" />
+          <ScalarProperty Name="ESkirtHID" ColumnName="ESkirtHID" />
+          <ScalarProperty Name="ESkirtMID" ColumnName="ESkirtMID" />
+          <ScalarProperty Name="MStationID" ColumnName="MStationID" />
+          <ScalarProperty Name="EHubSID" ColumnName="EHubSID" />
+          <ScalarProperty Name="EHubHID" ColumnName="EHubHID" />
+          <ScalarProperty Name="IHubSID" ColumnName="IHubSID" />
+          <ScalarProperty Name="IHubHID" ColumnName="IHubHID" />
+          <ScalarProperty Name="ISkirtSID" ColumnName="ISkirtSID" />
+          <ScalarProperty Name="ISkirtHID" ColumnName="ISkirtHID" />
+          <ScalarProperty Name="ISkirtMID" ColumnName="ISkirtMID" />
+          <ScalarProperty Name="ISkirtMSID" ColumnName="ISkirtMSID" />
+          <ScalarProperty Name="ELotNo" ColumnName="ELotNo" />
+          <ScalarProperty Name="ILotNo" ColumnName="ILotNo" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="OriginCityCode" ColumnName="OriginCityCode" />
+          <ScalarProperty Name="OriginCityName" ColumnName="OriginCityName" />
+          <ScalarProperty Name="OriginCountryCode" ColumnName="OriginCountryCode" />
+          <ScalarProperty Name="OriginCountryName" ColumnName="OriginCountryName" />
+          <ScalarProperty Name="POL" ColumnName="POL" />
+          <ScalarProperty Name="POLCode" ColumnName="POLCode" />
+          <ScalarProperty Name="POLName" ColumnName="POLName" />
+          <ScalarProperty Name="POLCountryCode" ColumnName="POLCountryCode" />
+          <ScalarProperty Name="POLCountryName" ColumnName="POLCountryName" />
+          <ScalarProperty Name="POD" ColumnName="POD" />
+          <ScalarProperty Name="PODCode" ColumnName="PODCode" />
+          <ScalarProperty Name="PODName" ColumnName="PODName" />
+          <ScalarProperty Name="PODCountryCode" ColumnName="PODCountryCode" />
+          <ScalarProperty Name="PODCountryName" ColumnName="PODCountryName" />
+          <ScalarProperty Name="DSTN" ColumnName="DSTN" />
+          <ScalarProperty Name="DSTNCityCode" ColumnName="DSTNCityCode" />
+          <ScalarProperty Name="DSTNCityName" ColumnName="DSTNCityName" />
+          <ScalarProperty Name="DSTNCountryCode" ColumnName="DSTNCountryCode" />
+          <ScalarProperty Name="DSTNCountryName" ColumnName="DSTNCountryName" />
+          <ScalarProperty Name="Shipper" ColumnName="Shipper" />
+          <ScalarProperty Name="ShipperCode" ColumnName="ShipperCode" />
+          <ScalarProperty Name="ShipperName" ColumnName="ShipperName" />
+          <ScalarProperty Name="HouseShipperName" ColumnName="HouseShipperName" />
+          <ScalarProperty Name="HouseShipperAddr" ColumnName="HouseShipperAddr" />
+          <ScalarProperty Name="CNEE" ColumnName="CNEE" />
+          <ScalarProperty Name="CNEECode" ColumnName="CNEECode" />
+          <ScalarProperty Name="CNEEName" ColumnName="CNEEName" />
+          <ScalarProperty Name="HouseCNEEName" ColumnName="HouseCNEEName" />
+          <ScalarProperty Name="HouseCNEEAddr" ColumnName="HouseCNEEAddr" />
+          <ScalarProperty Name="Notify" ColumnName="Notify" />
+          <ScalarProperty Name="NotifyCode" ColumnName="NotifyCode" />
+          <ScalarProperty Name="NotifyName" ColumnName="NotifyName" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="ServiceLevel" ColumnName="ServiceLevel" />
+          <ScalarProperty Name="TradeTerm" ColumnName="TradeTerm" />
+          <ScalarProperty Name="Move" ColumnName="Move" />
+          <ScalarProperty Name="BookedFLT" ColumnName="BookedFLT" />
+          <ScalarProperty Name="OnBoardFLT" ColumnName="OnBoardFLT" />
+          <ScalarProperty Name="Vessel" ColumnName="Vessel" />
+          <ScalarProperty Name="Voyage" ColumnName="Voyage" />
+          <ScalarProperty Name="CWT" ColumnName="CWT" />
+          <ScalarProperty Name="CWTUOM" ColumnName="CWTUOM" />
+          <ScalarProperty Name="GWT" ColumnName="GWT" />
+          <ScalarProperty Name="GWTUOM" ColumnName="GWTUOM" />
+          <ScalarProperty Name="PCS" ColumnName="PCS" />
+          <ScalarProperty Name="PCSUOM" ColumnName="PCSUOM" />
+          <ScalarProperty Name="CBM" ColumnName="CBM" />
+          <ScalarProperty Name="TEU" ColumnName="TEU" />
+          <ScalarProperty Name="C20" ColumnName="C20" />
+          <ScalarProperty Name="C40" ColumnName="C40" />
+          <ScalarProperty Name="C40H" ColumnName="C40H" />
+          <ScalarProperty Name="C45" ColumnName="C45" />
+          <ScalarProperty Name="OtherCNTR" ColumnName="OtherCNTR" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DIMINV" ColumnName="DIMINV" />
+          <ScalarProperty Name="CTNRNo" ColumnName="CTNRNo" />
+          <ScalarProperty Name="PickAddr" ColumnName="PickAddr" />
+          <ScalarProperty Name="DELVAddr" ColumnName="DELVAddr" />
+          <ScalarProperty Name="PickPCS" ColumnName="PickPCS" />
+          <ScalarProperty Name="PickPCSUOM" ColumnName="PickPCSUOM" />
+          <ScalarProperty Name="PickWeight" ColumnName="PickWeight" />
+          <ScalarProperty Name="PickWeightUOM" ColumnName="PickWeightUOM" />
+          <ScalarProperty Name="ActualPickup" ColumnName="ActualPickup" />
+          <ScalarProperty Name="PickRemark" ColumnName="PickRemark" />
+          <ScalarProperty Name="VWT" ColumnName="VWT" />
+          <ScalarProperty Name="Volumn" ColumnName="Volumn" />
+          <ScalarProperty Name="Extra0" ColumnName="Extra0" />
+          <ScalarProperty Name="Extra1" ColumnName="Extra1" />
+          <ScalarProperty Name="Extra2" ColumnName="Extra2" />
+          <ScalarProperty Name="Extra3" ColumnName="Extra3" />
+          <ScalarProperty Name="Extra4" ColumnName="Extra4" />
+          <ScalarProperty Name="Extra5" ColumnName="Extra5" />
+          <ScalarProperty Name="Extra6" ColumnName="Extra6" />
+          <ScalarProperty Name="Extra7" ColumnName="Extra7" />
+          <ScalarProperty Name="Extra8" ColumnName="Extra8" />
+          <ScalarProperty Name="Extra9" ColumnName="Extra9" />
+          <ScalarProperty Name="SCHCargoSignBy" ColumnName="SCHCargoSignBy" />
+          <ScalarProperty Name="HRemark" ColumnName="HRemark" />
+          <ScalarProperty Name="MasterCarrier" ColumnName="MasterCarrier" />
+          <ScalarProperty Name="MasterCarrierCode" ColumnName="MasterCarrierCode" />
+          <ScalarProperty Name="MasterCarrierName" ColumnName="MasterCarrierName" />
+          <ScalarProperty Name="OwnerUserID" ColumnName="OwnerUserID" />
+          <ScalarProperty Name="OwnerUserName" ColumnName="OwnerUserName" />
+          <ScalarProperty Name="OwnerStationID" ColumnName="OwnerStationID" />
+          <ScalarProperty Name="OwnerStationCode" ColumnName="OwnerStationCode" />
+          <ScalarProperty Name="GWT_KG" ColumnName="GWT_KG" />
+          <ScalarProperty Name="CWT_KG" ColumnName="CWT_KG" />
+          <ScalarProperty Name="GoodsDescription" ColumnName="GoodsDescription" />
+          <ScalarProperty Name="OMSMoveType" ColumnName="OMSMoveType" />
+          <ScalarProperty Name="SPUnit" ColumnName="SPUnit" />
+          <ScalarProperty Name="SPUnitUOM" ColumnName="SPUnitUOM" />
+          <ScalarProperty Name="ReasonCode" ColumnName="ReasonCode" />
+          <ScalarProperty Name="ReasonName" ColumnName="ReasonName" />
+          <ScalarProperty Name="ReasonDescription" ColumnName="ReasonDescription" />
+          <ScalarProperty Name="FLTPeriod" ColumnName="FLTPeriod" />
+          <ScalarProperty Name="TPSID" ColumnName="TPSID" />
+          <ScalarProperty Name="TPHID" ColumnName="TPHID" />
+          <ScalarProperty Name="HandlingCode" ColumnName="HandlingCode" />
+          <ScalarProperty Name="HandlingCodeCategory" ColumnName="HandlingCodeCategory" />
+          <ScalarProperty Name="FCLCBM" ColumnName="FCLCBM" />
+          <ScalarProperty Name="CTNRType" ColumnName="CTNRType" />
+          <ScalarProperty Name="EAirPortCode" ColumnName="EAirPortCode" />
+          <ScalarProperty Name="EAirPortName" ColumnName="EAirPortName" />
+          <ScalarProperty Name="IAirPortCode" ColumnName="IAirPortCode" />
+          <ScalarProperty Name="IAirPortName" ColumnName="IAirPortName" />
+          <ScalarProperty Name="FlightRoute" ColumnName="FlightRoute" />
+          <ScalarProperty Name="ConfirmID" ColumnName="ConfirmID" />
+          <ScalarProperty Name="FCalculateType" ColumnName="FCalculateType" />
+          <ScalarProperty Name="RevenueTon" ColumnName="RevenueTon" />
+          <ScalarProperty Name="FreightPayType" ColumnName="FreightPayType" />
+          <ScalarProperty Name="StrShiptype" ColumnName="StrShiptype" />
+          <ScalarProperty Name="ClassRate" ColumnName="ClassRate" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="IsCalculateInv" ColumnName="IsCalculateInv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPShipmentMRDetail">
+      <EntityTypeMapping TypeName="CSPModel.OPShipmentMRDetail">
+        <MappingFragment StoreEntitySet="OPShipmentMRDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MRID" ColumnName="MRID" />
+          <ScalarProperty Name="ViewType" ColumnName="ViewType" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="RuleName" ColumnName="RuleName" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Descript" ColumnName="Descript" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPShipmentMRSummary">
+      <EntityTypeMapping TypeName="CSPModel.OPShipmentMRSummary">
+        <MappingFragment StoreEntitySet="OPShipmentMRSummary">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MRID" ColumnName="MRID" />
+          <ScalarProperty Name="ViewType" ColumnName="ViewType" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Descript" ColumnName="Descript" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPSummaryData">
+      <EntityTypeMapping TypeName="CSPModel.OPSummaryData">
+        <MappingFragment StoreEntitySet="OPSummaryData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="FRT_NET_CUS" ColumnName="FRT_NET_CUS" />
+          <ScalarProperty Name="FRT_VAT_CUS" ColumnName="FRT_VAT_CUS" />
+          <ScalarProperty Name="FSC_NET_CUS" ColumnName="FSC_NET_CUS" />
+          <ScalarProperty Name="FSC_VAT_CUS" ColumnName="FSC_VAT_CUS" />
+          <ScalarProperty Name="WRS_NET_CUS" ColumnName="WRS_NET_CUS" />
+          <ScalarProperty Name="WRS_VAT_CUS" ColumnName="WRS_VAT_CUS" />
+          <ScalarProperty Name="Other_NET_CUS" ColumnName="Other_NET_CUS" />
+          <ScalarProperty Name="Other_VAT_CUS" ColumnName="Other_VAT_CUS" />
+          <ScalarProperty Name="TTL_NET_CUS" ColumnName="TTL_NET_CUS" />
+          <ScalarProperty Name="TTL_VAT_CUS" ColumnName="TTL_VAT_CUS" />
+          <ScalarProperty Name="ORG_Other_NET_CUS" ColumnName="ORG_Other_NET_CUS" />
+          <ScalarProperty Name="ORG_Other_VAT_CUS" ColumnName="ORG_Other_VAT_CUS" />
+          <ScalarProperty Name="DSTN_Other_NET_CUS" ColumnName="DSTN_Other_NET_CUS" />
+          <ScalarProperty Name="DSTN_Other_VAT_CUS" ColumnName="DSTN_Other_VAT_CUS" />
+          <ScalarProperty Name="Surcharges_VAT_CUS" ColumnName="Surcharges_VAT_CUS" />
+          <ScalarProperty Name="Surcharges_NET_CUS" ColumnName="Surcharges_NET_CUS" />
+          <ScalarProperty Name="Duty_NET_CUS" ColumnName="Duty_NET_CUS" />
+          <ScalarProperty Name="Duty_VAT_CUS" ColumnName="Duty_VAT_CUS" />
+          <ScalarProperty Name="FRT_NET_ALL" ColumnName="FRT_NET_ALL" />
+          <ScalarProperty Name="FRT_VAT_ALL" ColumnName="FRT_VAT_ALL" />
+          <ScalarProperty Name="FSC_NET_ALL" ColumnName="FSC_NET_ALL" />
+          <ScalarProperty Name="FSC_VAT_ALL" ColumnName="FSC_VAT_ALL" />
+          <ScalarProperty Name="WRS_NET_ALL" ColumnName="WRS_NET_ALL" />
+          <ScalarProperty Name="WRS_VAT_ALL" ColumnName="WRS_VAT_ALL" />
+          <ScalarProperty Name="Other_NET_ALL" ColumnName="Other_NET_ALL" />
+          <ScalarProperty Name="Other_VAT_ALL" ColumnName="Other_VAT_ALL" />
+          <ScalarProperty Name="TTL_NET_ALL" ColumnName="TTL_NET_ALL" />
+          <ScalarProperty Name="TTL_VAT_ALL" ColumnName="TTL_VAT_ALL" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ORG_Other_NET_ALL" ColumnName="ORG_Other_NET_ALL" />
+          <ScalarProperty Name="ORG_Other_VAT_ALL" ColumnName="ORG_Other_VAT_ALL" />
+          <ScalarProperty Name="DSTN_Other_NET_ALL" ColumnName="DSTN_Other_NET_ALL" />
+          <ScalarProperty Name="DSTN_Other_VAT_ALL" ColumnName="DSTN_Other_VAT_ALL" />
+          <ScalarProperty Name="Surcharges_NET_ALL" ColumnName="Surcharges_NET_ALL" />
+          <ScalarProperty Name="Surcharges_VAT_ALL" ColumnName="Surcharges_VAT_ALL" />
+          <ScalarProperty Name="Duty_NET_ALL" ColumnName="Duty_NET_ALL" />
+          <ScalarProperty Name="Duty_VAT_ALL" ColumnName="Duty_VAT_ALL" />
+          <ScalarProperty Name="SalesExtra0" ColumnName="SalesExtra0" />
+          <ScalarProperty Name="SalesExtra1" ColumnName="SalesExtra1" />
+          <ScalarProperty Name="SalesExtra2" ColumnName="SalesExtra2" />
+          <ScalarProperty Name="SalesExtra3" ColumnName="SalesExtra3" />
+          <ScalarProperty Name="SalesExtra4" ColumnName="SalesExtra4" />
+          <ScalarProperty Name="SalesExtra5" ColumnName="SalesExtra5" />
+          <ScalarProperty Name="SalesExtra6" ColumnName="SalesExtra6" />
+          <ScalarProperty Name="SalesExtra7" ColumnName="SalesExtra7" />
+          <ScalarProperty Name="SalesExtra8" ColumnName="SalesExtra8" />
+          <ScalarProperty Name="SalesExtra9" ColumnName="SalesExtra9" />
+          <ScalarProperty Name="FRT_ECOST" ColumnName="FRT_ECOST" />
+          <ScalarProperty Name="FRT_VAT_ECOST" ColumnName="FRT_VAT_ECOST" />
+          <ScalarProperty Name="Other_ECOST" ColumnName="Other_ECOST" />
+          <ScalarProperty Name="Other_VAT_ECOST" ColumnName="Other_VAT_ECOST" />
+          <ScalarProperty Name="TTL_ECOST" ColumnName="TTL_ECOST" />
+          <ScalarProperty Name="TTL_VAT_ECOST" ColumnName="TTL_VAT_ECOST" />
+          <ScalarProperty Name="TTL_SUM_Sales" ColumnName="TTL_SUM_Sales" />
+          <ScalarProperty Name="TTL_SUM_VAT_Sales" ColumnName="TTL_SUM_VAT_Sales" />
+          <ScalarProperty Name="GP" ColumnName="GP" />
+          <ScalarProperty Name="SalesExtra10" ColumnName="SalesExtra10" />
+          <ScalarProperty Name="SalesExtra11" ColumnName="SalesExtra11" />
+          <ScalarProperty Name="SalesExtra12" ColumnName="SalesExtra12" />
+          <ScalarProperty Name="SalesExtra13" ColumnName="SalesExtra13" />
+          <ScalarProperty Name="SalesExtra14" ColumnName="SalesExtra14" />
+          <ScalarProperty Name="SalesExtra15" ColumnName="SalesExtra15" />
+          <ScalarProperty Name="SalesExtra16" ColumnName="SalesExtra16" />
+          <ScalarProperty Name="SalesExtra17" ColumnName="SalesExtra17" />
+          <ScalarProperty Name="SalesExtra18" ColumnName="SalesExtra18" />
+          <ScalarProperty Name="SalesExtra19" ColumnName="SalesExtra19" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RCGroupMemberV2">
+      <EntityTypeMapping TypeName="CSPModel.RCGroupMemberV2">
+        <MappingFragment StoreEntitySet="RCGroupMemberV2">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RCGroupV2">
+      <EntityTypeMapping TypeName="CSPModel.RCGroupV2">
+        <MappingFragment StoreEntitySet="RCGroupV2">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="Public" ColumnName="Public" />
+          <ScalarProperty Name="CreateDT" ColumnName="CreateDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RCRightV2">
+      <EntityTypeMapping TypeName="CSPModel.RCRightV2">
+        <MappingFragment StoreEntitySet="RCRightV2">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="RightType" ColumnName="RightType" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ControlMode" ColumnName="ControlMode" />
+          <ScalarProperty Name="Paras" ColumnName="Paras" />
+          <ScalarProperty Name="SortingNo" ColumnName="SortingNo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Show" ColumnName="Show" />
+          <ScalarProperty Name="Help" ColumnName="Help" />
+          <ScalarProperty Name="DisplayText" ColumnName="DisplayText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RCTemplateRightV2">
+      <EntityTypeMapping TypeName="CSPModel.RCTemplateRightV2">
+        <MappingFragment StoreEntitySet="RCTemplateRightV2">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TemplateID" ColumnName="TemplateID" />
+          <ScalarProperty Name="RightID" ColumnName="RightID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RCTemplateV2">
+      <EntityTypeMapping TypeName="CSPModel.RCTemplateV2">
+        <MappingFragment StoreEntitySet="RCTemplateV2">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TemplateName" ColumnName="TemplateName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="Public" ColumnName="Public" />
+          <ScalarProperty Name="CreateDT" ColumnName="CreateDT" />
+          <ScalarProperty Name="OwnerType" ColumnName="OwnerType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RCUser">
+      <EntityTypeMapping TypeName="CSPModel.RCUser">
+        <MappingFragment StoreEntitySet="RCUser">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="ReportTo" ColumnName="ReportTo" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="Skype" ColumnName="Skype" />
+          <ScalarProperty Name="LastLoginDT" ColumnName="LastLoginDT" />
+          <ScalarProperty Name="LastLodinIP" ColumnName="LastLodinIP" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RCUserRightV2">
+      <EntityTypeMapping TypeName="CSPModel.RCUserRightV2">
+        <MappingFragment StoreEntitySet="RCUserRightV2">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OwnerType" ColumnName="OwnerType" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="RightID" ColumnName="RightID" />
+          <ScalarProperty Name="CreatorID" ColumnName="CreatorID" />
+          <ScalarProperty Name="CreateDT" ColumnName="CreateDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPFiled">
+      <EntityTypeMapping TypeName="CSPModel.RPFiled">
+        <MappingFragment StoreEntitySet="RPFiled">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="FiledCode" ColumnName="FiledCode" />
+          <ScalarProperty Name="FiledName" ColumnName="FiledName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="isCustomer" ColumnName="isCustomer" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="isExtra" ColumnName="isExtra" />
+          <ScalarProperty Name="AllowSummary" ColumnName="AllowSummary" />
+          <ScalarProperty Name="AllowAvergae" ColumnName="AllowAvergae" />
+          <ScalarProperty Name="AllowMax" ColumnName="AllowMax" />
+          <ScalarProperty Name="AllowMin" ColumnName="AllowMin" />
+          <ScalarProperty Name="AllowCount" ColumnName="AllowCount" />
+          <ScalarProperty Name="AllowOperation" ColumnName="AllowOperation" />
+          <ScalarProperty Name="AllowConcat" ColumnName="AllowConcat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPReport">
+      <EntityTypeMapping TypeName="CSPModel.RPReport">
+        <MappingFragment StoreEntitySet="RPReport">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="ReportType" ColumnName="ReportType" />
+          <ScalarProperty Name="Productline" ColumnName="Productline" />
+          <ScalarProperty Name="ReportName" ColumnName="ReportName" />
+          <ScalarProperty Name="Context" ColumnName="Context" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedUserID" ColumnName="CreatedUserID" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedUserID" ColumnName="UpdatedUserID" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="ReportStatus" ColumnName="ReportStatus" />
+          <ScalarProperty Name="ReportSumType" ColumnName="ReportSumType" />
+          <ScalarProperty Name="ShipmentDate" ColumnName="ShipmentDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SAARStatus">
+      <EntityTypeMapping TypeName="CSPModel.SAARStatus">
+        <MappingFragment StoreEntitySet="SAARStatus">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ProductLineCode" ColumnName="ProductLineCode" />
+          <ScalarProperty Name="AR0" ColumnName="AR0" />
+          <ScalarProperty Name="AR1" ColumnName="AR1" />
+          <ScalarProperty Name="AR2" ColumnName="AR2" />
+          <ScalarProperty Name="AR3" ColumnName="AR3" />
+          <ScalarProperty Name="AR4" ColumnName="AR4" />
+          <ScalarProperty Name="AR5" ColumnName="AR5" />
+          <ScalarProperty Name="AR6" ColumnName="AR6" />
+          <ScalarProperty Name="AR7" ColumnName="AR7" />
+          <ScalarProperty Name="AR8" ColumnName="AR8" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="OverDue" ColumnName="OverDue" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SAShptStatus">
+      <EntityTypeMapping TypeName="CSPModel.SAShptStatus">
+        <MappingFragment StoreEntitySet="SAShptStatus">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ProductLineCode" ColumnName="ProductLineCode" />
+          <ScalarProperty Name="YY" ColumnName="YY" />
+          <ScalarProperty Name="MM" ColumnName="MM" />
+          <ScalarProperty Name="CntShpt" ColumnName="CntShpt" />
+          <ScalarProperty Name="Revenue" ColumnName="Revenue" />
+          <ScalarProperty Name="GP" ColumnName="GP" />
+          <ScalarProperty Name="CWT" ColumnName="CWT" />
+          <ScalarProperty Name="GWT" ColumnName="GWT" />
+          <ScalarProperty Name="TEU" ColumnName="TEU" />
+          <ScalarProperty Name="CBM" ColumnName="CBM" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SCTask">
+      <EntityTypeMapping TypeName="CSPModel.SCTask">
+        <MappingFragment StoreEntitySet="SCTask">
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="TaskName" ColumnName="TaskName" />
+          <ScalarProperty Name="Interval" ColumnName="Interval" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SCTaskLog">
+      <EntityTypeMapping TypeName="CSPModel.SCTaskLog">
+        <MappingFragment StoreEntitySet="SCTaskLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="TaskLog" ColumnName="TaskLog" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysreplservers">
+      <EntityTypeMapping TypeName="CSPModel.sysreplservers">
+        <MappingFragment StoreEntitySet="sysreplservers">
+          <ScalarProperty Name="srvname" ColumnName="srvname" />
+          <ScalarProperty Name="srvid" ColumnName="srvid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UIControl">
+      <EntityTypeMapping TypeName="CSPModel.UIControl">
+        <MappingFragment StoreEntitySet="UIControl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PageCode" ColumnName="PageCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UIControlDT">
+      <EntityTypeMapping TypeName="CSPModel.UIControlDT">
+        <MappingFragment StoreEntitySet="UIControlDT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UIControlID" ColumnName="UIControlID" />
+          <ScalarProperty Name="ObjectName" ColumnName="ObjectName" />
+          <ScalarProperty Name="ShowMethod" ColumnName="ShowMethod" />
+          <ScalarProperty Name="ValidationRule" ColumnName="ValidationRule" />
+          <ScalarProperty Name="ClientEvent" ColumnName="ClientEvent" />
+          <ScalarProperty Name="ClientEventFun" ColumnName="ClientEventFun" />
+          <ScalarProperty Name="AliasText" ColumnName="AliasText" />
+          <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+          <ScalarProperty Name="SeqNo" ColumnName="SeqNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WTIrregularLog">
+      <EntityTypeMapping TypeName="CSPModel.WTIrregularLog">
+        <MappingFragment StoreEntitySet="WTIrregularLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="MilestoneID" ColumnName="MilestoneID" />
+          <ScalarProperty Name="ReasonCode" ColumnName="ReasonCode" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CreatedDT" ColumnName="CreatedDT" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedDT" ColumnName="UpdatedDT" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WTReason">
+      <EntityTypeMapping TypeName="CSPModel.WTReason">
+        <MappingFragment StoreEntitySet="WTReason">
+          <ScalarProperty Name="HQID" ColumnName="HQID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="ReasonCode" ColumnName="ReasonCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GCRList">
+      <EntityTypeMapping TypeName="CSPModel.GCRList">
+        <MappingFragment StoreEntitySet="GCRList">
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="low" ColumnName="low" />
+          <ScalarProperty Name="customername" ColumnName="customername" />
+          <ScalarProperty Name="Commodity" ColumnName="Commodity" />
+          <ScalarProperty Name="OriginCityCode" ColumnName="OriginCityCode" />
+          <ScalarProperty Name="POLCode" ColumnName="POLCode" />
+          <ScalarProperty Name="PODCode" ColumnName="PODCode" />
+          <ScalarProperty Name="DSTNCityName" ColumnName="DSTNCityName" />
+          <ScalarProperty Name="MasterCarrierCode" ColumnName="MasterCarrierCode" />
+          <ScalarProperty Name="TEU" ColumnName="TEU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSpeer_conflictdetectionconfigresponse">
+      <EntityTypeMapping TypeName="CSPModel.MSpeer_conflictdetectionconfigresponse">
+        <MappingFragment StoreEntitySet="MSpeer_conflictdetectionconfigresponse">
+          <ScalarProperty Name="request_id" ColumnName="request_id" />
+          <ScalarProperty Name="peer_node" ColumnName="peer_node" />
+          <ScalarProperty Name="peer_db" ColumnName="peer_db" />
+          <ScalarProperty Name="peer_version" ColumnName="peer_version" />
+          <ScalarProperty Name="peer_db_version" ColumnName="peer_db_version" />
+          <ScalarProperty Name="is_peer" ColumnName="is_peer" />
+          <ScalarProperty Name="conflictdetection_enabled" ColumnName="conflictdetection_enabled" />
+          <ScalarProperty Name="originator_id" ColumnName="originator_id" />
+          <ScalarProperty Name="peer_conflict_retention" ColumnName="peer_conflict_retention" />
+          <ScalarProperty Name="peer_continue_onconflict" ColumnName="peer_continue_onconflict" />
+          <ScalarProperty Name="peer_subscriptions" ColumnName="peer_subscriptions" />
+          <ScalarProperty Name="progress_phase" ColumnName="progress_phase" />
+          <ScalarProperty Name="modified_date" ColumnName="modified_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSpeer_originatorid_history">
+      <EntityTypeMapping TypeName="CSPModel.MSpeer_originatorid_history">
+        <MappingFragment StoreEntitySet="MSpeer_originatorid_history">
+          <ScalarProperty Name="originator_publication" ColumnName="originator_publication" />
+          <ScalarProperty Name="originator_id" ColumnName="originator_id" />
+          <ScalarProperty Name="originator_node" ColumnName="originator_node" />
+          <ScalarProperty Name="originator_db" ColumnName="originator_db" />
+          <ScalarProperty Name="originator_db_version" ColumnName="originator_db_version" />
+          <ScalarProperty Name="originator_version" ColumnName="originator_version" />
+          <ScalarProperty Name="inserted_date" ColumnName="inserted_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSpeer_request">
+      <EntityTypeMapping TypeName="CSPModel.MSpeer_request">
+        <MappingFragment StoreEntitySet="MSpeer_request">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="publication" ColumnName="publication" />
+          <ScalarProperty Name="sent_date" ColumnName="sent_date" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSpeer_response">
+      <EntityTypeMapping TypeName="CSPModel.MSpeer_response">
+        <MappingFragment StoreEntitySet="MSpeer_response">
+          <ScalarProperty Name="request_id" ColumnName="request_id" />
+          <ScalarProperty Name="peer" ColumnName="peer" />
+          <ScalarProperty Name="peer_db" ColumnName="peer_db" />
+          <ScalarProperty Name="received_date" ColumnName="received_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSpeer_topologyrequest">
+      <EntityTypeMapping TypeName="CSPModel.MSpeer_topologyrequest">
+        <MappingFragment StoreEntitySet="MSpeer_topologyrequest">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="publication" ColumnName="publication" />
+          <ScalarProperty Name="sent_date" ColumnName="sent_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSpeer_topologyresponse">
+      <EntityTypeMapping TypeName="CSPModel.MSpeer_topologyresponse">
+        <MappingFragment StoreEntitySet="MSpeer_topologyresponse">
+          <ScalarProperty Name="request_id" ColumnName="request_id" />
+          <ScalarProperty Name="peer" ColumnName="peer" />
+          <ScalarProperty Name="peer_version" ColumnName="peer_version" />
+          <ScalarProperty Name="peer_db" ColumnName="peer_db" />
+          <ScalarProperty Name="originator_id" ColumnName="originator_id" />
+          <ScalarProperty Name="peer_conflict_retention" ColumnName="peer_conflict_retention" />
+          <ScalarProperty Name="received_date" ColumnName="received_date" />
+          <ScalarProperty Name="connection_info" ColumnName="connection_info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSpub_identity_range">
+      <EntityTypeMapping TypeName="CSPModel.MSpub_identity_range">
+        <MappingFragment StoreEntitySet="MSpub_identity_range">
+          <ScalarProperty Name="objid" ColumnName="objid" />
+          <ScalarProperty Name="range" ColumnName="range" />
+          <ScalarProperty Name="pub_range" ColumnName="pub_range" />
+          <ScalarProperty Name="current_pub_range" ColumnName="current_pub_range" />
+          <ScalarProperty Name="threshold" ColumnName="threshold" />
+          <ScalarProperty Name="last_seed" ColumnName="last_seed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSreplication_objects">
+      <EntityTypeMapping TypeName="CSPModel.MSreplication_objects">
+        <MappingFragment StoreEntitySet="MSreplication_objects">
+          <ScalarProperty Name="publisher" ColumnName="publisher" />
+          <ScalarProperty Name="publisher_db" ColumnName="publisher_db" />
+          <ScalarProperty Name="publication" ColumnName="publication" />
+          <ScalarProperty Name="object_name" ColumnName="object_name" />
+          <ScalarProperty Name="object_type" ColumnName="object_type" />
+          <ScalarProperty Name="article" ColumnName="article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSreplication_subscriptions">
+      <EntityTypeMapping TypeName="CSPModel.MSreplication_subscriptions">
+        <MappingFragment StoreEntitySet="MSreplication_subscriptions">
+          <ScalarProperty Name="publisher" ColumnName="publisher" />
+          <ScalarProperty Name="publisher_db" ColumnName="publisher_db" />
+          <ScalarProperty Name="publication" ColumnName="publication" />
+          <ScalarProperty Name="independent_agent" ColumnName="independent_agent" />
+          <ScalarProperty Name="subscription_type" ColumnName="subscription_type" />
+          <ScalarProperty Name="distribution_agent" ColumnName="distribution_agent" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="transaction_timestamp" ColumnName="transaction_timestamp" />
+          <ScalarProperty Name="update_mode" ColumnName="update_mode" />
+          <ScalarProperty Name="agent_id" ColumnName="agent_id" />
+          <ScalarProperty Name="subscription_guid" ColumnName="subscription_guid" />
+          <ScalarProperty Name="subid" ColumnName="subid" />
+          <ScalarProperty Name="immediate_sync" ColumnName="immediate_sync" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSsavedforeignkeycolumns">
+      <EntityTypeMapping TypeName="CSPModel.MSsavedforeignkeycolumns">
+        <MappingFragment StoreEntitySet="MSsavedforeignkeycolumns">
+          <ScalarProperty Name="program_name" ColumnName="program_name" />
+          <ScalarProperty Name="constraint_name" ColumnName="constraint_name" />
+          <ScalarProperty Name="parent_schema" ColumnName="parent_schema" />
+          <ScalarProperty Name="constraint_column_id" ColumnName="constraint_column_id" />
+          <ScalarProperty Name="referencing_column_name" ColumnName="referencing_column_name" />
+          <ScalarProperty Name="referenced_column_name" ColumnName="referenced_column_name" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSsavedforeignkeyextendedproperties">
+      <EntityTypeMapping TypeName="CSPModel.MSsavedforeignkeyextendedproperties">
+        <MappingFragment StoreEntitySet="MSsavedforeignkeyextendedproperties">
+          <ScalarProperty Name="program_name" ColumnName="program_name" />
+          <ScalarProperty Name="constraint_name" ColumnName="constraint_name" />
+          <ScalarProperty Name="parent_schema" ColumnName="parent_schema" />
+          <ScalarProperty Name="property_name" ColumnName="property_name" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSsavedforeignkeys">
+      <EntityTypeMapping TypeName="CSPModel.MSsavedforeignkeys">
+        <MappingFragment StoreEntitySet="MSsavedforeignkeys">
+          <ScalarProperty Name="program_name" ColumnName="program_name" />
+          <ScalarProperty Name="constraint_name" ColumnName="constraint_name" />
+          <ScalarProperty Name="parent_schema" ColumnName="parent_schema" />
+          <ScalarProperty Name="parent_name" ColumnName="parent_name" />
+          <ScalarProperty Name="referenced_object_schema" ColumnName="referenced_object_schema" />
+          <ScalarProperty Name="referenced_object_name" ColumnName="referenced_object_name" />
+          <ScalarProperty Name="is_disabled" ColumnName="is_disabled" />
+          <ScalarProperty Name="is_not_for_replication" ColumnName="is_not_for_replication" />
+          <ScalarProperty Name="is_not_trusted" ColumnName="is_not_trusted" />
+          <ScalarProperty Name="delete_referential_action" ColumnName="delete_referential_action" />
+          <ScalarProperty Name="update_referential_action" ColumnName="update_referential_action" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSsnapshotdeliveryprogress">
+      <EntityTypeMapping TypeName="CSPModel.MSsnapshotdeliveryprogress">
+        <MappingFragment StoreEntitySet="MSsnapshotdeliveryprogress">
+          <ScalarProperty Name="session_token" ColumnName="session_token" />
+          <ScalarProperty Name="progress_token_hash" ColumnName="progress_token_hash" />
+          <ScalarProperty Name="progress_token" ColumnName="progress_token" />
+          <ScalarProperty Name="progress_timestamp" ColumnName="progress_timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSsubscription_agents">
+      <EntityTypeMapping TypeName="CSPModel.MSsubscription_agents">
+        <MappingFragment StoreEntitySet="MSsubscription_agents">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="publisher" ColumnName="publisher" />
+          <ScalarProperty Name="publisher_db" ColumnName="publisher_db" />
+          <ScalarProperty Name="publication" ColumnName="publication" />
+          <ScalarProperty Name="subscription_type" ColumnName="subscription_type" />
+          <ScalarProperty Name="queue_id" ColumnName="queue_id" />
+          <ScalarProperty Name="update_mode" ColumnName="update_mode" />
+          <ScalarProperty Name="failover_mode" ColumnName="failover_mode" />
+          <ScalarProperty Name="spid" ColumnName="spid" />
+          <ScalarProperty Name="login_time" ColumnName="login_time" />
+          <ScalarProperty Name="allow_subscription_copy" ColumnName="allow_subscription_copy" />
+          <ScalarProperty Name="attach_state" ColumnName="attach_state" />
+          <ScalarProperty Name="attach_version" ColumnName="attach_version" />
+          <ScalarProperty Name="last_sync_status" ColumnName="last_sync_status" />
+          <ScalarProperty Name="last_sync_summary" ColumnName="last_sync_summary" />
+          <ScalarProperty Name="last_sync_time" ColumnName="last_sync_time" />
+          <ScalarProperty Name="queue_server" ColumnName="queue_server" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MSsubscription_properties">
+      <EntityTypeMapping TypeName="CSPModel.MSsubscription_properties">
+        <MappingFragment StoreEntitySet="MSsubscription_properties">
+          <ScalarProperty Name="publisher" ColumnName="publisher" />
+          <ScalarProperty Name="publisher_db" ColumnName="publisher_db" />
+          <ScalarProperty Name="publication" ColumnName="publication" />
+          <ScalarProperty Name="publication_type" ColumnName="publication_type" />
+          <ScalarProperty Name="publisher_login" ColumnName="publisher_login" />
+          <ScalarProperty Name="publisher_password" ColumnName="publisher_password" />
+          <ScalarProperty Name="publisher_security_mode" ColumnName="publisher_security_mode" />
+          <ScalarProperty Name="distributor" ColumnName="distributor" />
+          <ScalarProperty Name="distributor_login" ColumnName="distributor_login" />
+          <ScalarProperty Name="distributor_password" ColumnName="distributor_password" />
+          <ScalarProperty Name="distributor_security_mode" ColumnName="distributor_security_mode" />
+          <ScalarProperty Name="ftp_address" ColumnName="ftp_address" />
+          <ScalarProperty Name="ftp_port" ColumnName="ftp_port" />
+          <ScalarProperty Name="ftp_login" ColumnName="ftp_login" />
+          <ScalarProperty Name="ftp_password" ColumnName="ftp_password" />
+          <ScalarProperty Name="alt_snapshot_folder" ColumnName="alt_snapshot_folder" />
+          <ScalarProperty Name="working_directory" ColumnName="working_directory" />
+          <ScalarProperty Name="use_ftp" ColumnName="use_ftp" />
+          <ScalarProperty Name="dts_package_name" ColumnName="dts_package_name" />
+          <ScalarProperty Name="dts_package_password" ColumnName="dts_package_password" />
+          <ScalarProperty Name="dts_package_location" ColumnName="dts_package_location" />
+          <ScalarProperty Name="enabled_for_syncmgr" ColumnName="enabled_for_syncmgr" />
+          <ScalarProperty Name="offload_agent" ColumnName="offload_agent" />
+          <ScalarProperty Name="offload_server" ColumnName="offload_server" />
+          <ScalarProperty Name="dynamic_snapshot_location" ColumnName="dynamic_snapshot_location" />
+          <ScalarProperty Name="use_web_sync" ColumnName="use_web_sync" />
+          <ScalarProperty Name="internet_url" ColumnName="internet_url" />
+          <ScalarProperty Name="internet_login" ColumnName="internet_login" />
+          <ScalarProperty Name="internet_password" ColumnName="internet_password" />
+          <ScalarProperty Name="internet_security_mode" ColumnName="internet_security_mode" />
+          <ScalarProperty Name="internet_timeout" ColumnName="internet_timeout" />
+          <ScalarProperty Name="hostname" ColumnName="hostname" />
+          <ScalarProperty Name="publisherlink" ColumnName="publisherlink" />
+          <ScalarProperty Name="publisherlinkuser" ColumnName="publisherlinkuser" />
+          <ScalarProperty Name="job_step_uid" ColumnName="job_step_uid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPContainerMilestoneFactDataTmp">
+      <EntityTypeMapping TypeName="CSPModel.OPContainerMilestoneFactDataTmp">
+        <MappingFragment StoreEntitySet="OPContainerMilestoneFactDataTmp">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="ContainerNo" ColumnName="ContainerNo" />
+          <ScalarProperty Name="CM100" ColumnName="CM100" />
+          <ScalarProperty Name="CM200" ColumnName="CM200" />
+          <ScalarProperty Name="CM300" ColumnName="CM300" />
+          <ScalarProperty Name="CM400" ColumnName="CM400" />
+          <ScalarProperty Name="CM500" ColumnName="CM500" />
+          <ScalarProperty Name="CM600" ColumnName="CM600" />
+          <ScalarProperty Name="CM650" ColumnName="CM650" />
+          <ScalarProperty Name="CM700" ColumnName="CM700" />
+          <ScalarProperty Name="CM750" ColumnName="CM750" />
+          <ScalarProperty Name="CM800" ColumnName="CM800" />
+          <ScalarProperty Name="CM850" ColumnName="CM850" />
+          <ScalarProperty Name="CM900" ColumnName="CM900" />
+          <ScalarProperty Name="CM1000" ColumnName="CM1000" />
+          <ScalarProperty Name="CM1030" ColumnName="CM1030" />
+          <ScalarProperty Name="CM1050" ColumnName="CM1050" />
+          <ScalarProperty Name="CM1080" ColumnName="CM1080" />
+          <ScalarProperty Name="CM1100" ColumnName="CM1100" />
+          <ScalarProperty Name="CM1200" ColumnName="CM1200" />
+          <ScalarProperty Name="CM1300" ColumnName="CM1300" />
+          <ScalarProperty Name="CM1400" ColumnName="CM1400" />
+          <ScalarProperty Name="CM1600" ColumnName="CM1600" />
+          <ScalarProperty Name="CM1700" ColumnName="CM1700" />
+          <ScalarProperty Name="CM1800" ColumnName="CM1800" />
+          <ScalarProperty Name="CM1850" ColumnName="CM1850" />
+          <ScalarProperty Name="CM1900" ColumnName="CM1900" />
+          <ScalarProperty Name="CM2000" ColumnName="CM2000" />
+          <ScalarProperty Name="CM2100" ColumnName="CM2100" />
+          <ScalarProperty Name="CM2200" ColumnName="CM2200" />
+          <ScalarProperty Name="CM2300" ColumnName="CM2300" />
+          <ScalarProperty Name="CM2400" ColumnName="CM2400" />
+          <ScalarProperty Name="CM2500" ColumnName="CM2500" />
+          <ScalarProperty Name="CM2550" ColumnName="CM2550" />
+          <ScalarProperty Name="CM2600" ColumnName="CM2600" />
+          <ScalarProperty Name="CM2700" ColumnName="CM2700" />
+          <ScalarProperty Name="CM2800" ColumnName="CM2800" />
+          <ScalarProperty Name="CM2850" ColumnName="CM2850" />
+          <ScalarProperty Name="CM2900" ColumnName="CM2900" />
+          <ScalarProperty Name="CM2930" ColumnName="CM2930" />
+          <ScalarProperty Name="CM2950" ColumnName="CM2950" />
+          <ScalarProperty Name="CM2970" ColumnName="CM2970" />
+          <ScalarProperty Name="CM3000" ColumnName="CM3000" />
+          <ScalarProperty Name="CM3100" ColumnName="CM3100" />
+          <ScalarProperty Name="CM3200" ColumnName="CM3200" />
+          <ScalarProperty Name="CM3300" ColumnName="CM3300" />
+          <ScalarProperty Name="CM3400" ColumnName="CM3400" />
+          <ScalarProperty Name="CM3500" ColumnName="CM3500" />
+          <ScalarProperty Name="CM8000" ColumnName="CM8000" />
+          <ScalarProperty Name="CM100050" ColumnName="CM100050" />
+          <ScalarProperty Name="CM100100" ColumnName="CM100100" />
+          <ScalarProperty Name="CM100130" ColumnName="CM100130" />
+          <ScalarProperty Name="CM100150" ColumnName="CM100150" />
+          <ScalarProperty Name="CM100170" ColumnName="CM100170" />
+          <ScalarProperty Name="CM100200" ColumnName="CM100200" />
+          <ScalarProperty Name="CM100300" ColumnName="CM100300" />
+          <ScalarProperty Name="CM100400" ColumnName="CM100400" />
+          <ScalarProperty Name="CM100500" ColumnName="CM100500" />
+          <ScalarProperty Name="CM100600" ColumnName="CM100600" />
+          <ScalarProperty Name="CM100700" ColumnName="CM100700" />
+          <ScalarProperty Name="CM100800" ColumnName="CM100800" />
+          <ScalarProperty Name="CM100900" ColumnName="CM100900" />
+          <ScalarProperty Name="CM101000" ColumnName="CM101000" />
+          <ScalarProperty Name="CM101100" ColumnName="CM101100" />
+          <ScalarProperty Name="CM101150" ColumnName="CM101150" />
+          <ScalarProperty Name="CM101200" ColumnName="CM101200" />
+          <ScalarProperty Name="CM101300" ColumnName="CM101300" />
+          <ScalarProperty Name="CM101400" ColumnName="CM101400" />
+          <ScalarProperty Name="CM101500" ColumnName="CM101500" />
+          <ScalarProperty Name="CM101600" ColumnName="CM101600" />
+          <ScalarProperty Name="CM101650" ColumnName="CM101650" />
+          <ScalarProperty Name="CM101700" ColumnName="CM101700" />
+          <ScalarProperty Name="CM101800" ColumnName="CM101800" />
+          <ScalarProperty Name="CM101900" ColumnName="CM101900" />
+          <ScalarProperty Name="CM102000" ColumnName="CM102000" />
+          <ScalarProperty Name="CM102100" ColumnName="CM102100" />
+          <ScalarProperty Name="CM102200" ColumnName="CM102200" />
+          <ScalarProperty Name="CM102300" ColumnName="CM102300" />
+          <ScalarProperty Name="CM102400" ColumnName="CM102400" />
+          <ScalarProperty Name="CM102500" ColumnName="CM102500" />
+          <ScalarProperty Name="CM102600" ColumnName="CM102600" />
+          <ScalarProperty Name="CM102700" ColumnName="CM102700" />
+          <ScalarProperty Name="CM102900" ColumnName="CM102900" />
+          <ScalarProperty Name="CM103000" ColumnName="CM103000" />
+          <ScalarProperty Name="CM103100" ColumnName="CM103100" />
+          <ScalarProperty Name="CM103200" ColumnName="CM103200" />
+          <ScalarProperty Name="CM103300" ColumnName="CM103300" />
+          <ScalarProperty Name="CM103400" ColumnName="CM103400" />
+          <ScalarProperty Name="CM103500" ColumnName="CM103500" />
+          <ScalarProperty Name="CM103600" ColumnName="CM103600" />
+          <ScalarProperty Name="CM103700" ColumnName="CM103700" />
+          <ScalarProperty Name="CM103800" ColumnName="CM103800" />
+          <ScalarProperty Name="CM103900" ColumnName="CM103900" />
+          <ScalarProperty Name="CM104000" ColumnName="CM104000" />
+          <ScalarProperty Name="CM104100" ColumnName="CM104100" />
+          <ScalarProperty Name="CM104200" ColumnName="CM104200" />
+          <ScalarProperty Name="CM104300" ColumnName="CM104300" />
+          <ScalarProperty Name="CM104400" ColumnName="CM104400" />
+          <ScalarProperty Name="CM104500" ColumnName="CM104500" />
+          <ScalarProperty Name="CM104600" ColumnName="CM104600" />
+          <ScalarProperty Name="CM104700" ColumnName="CM104700" />
+          <ScalarProperty Name="CM104800" ColumnName="CM104800" />
+          <ScalarProperty Name="CM104900" ColumnName="CM104900" />
+          <ScalarProperty Name="CM104950" ColumnName="CM104950" />
+          <ScalarProperty Name="CM105000" ColumnName="CM105000" />
+          <ScalarProperty Name="CM105100" ColumnName="CM105100" />
+          <ScalarProperty Name="CM105200" ColumnName="CM105200" />
+          <ScalarProperty Name="CM105300" ColumnName="CM105300" />
+          <ScalarProperty Name="CM105400" ColumnName="CM105400" />
+          <ScalarProperty Name="CM105500" ColumnName="CM105500" />
+          <ScalarProperty Name="CM105550" ColumnName="CM105550" />
+          <ScalarProperty Name="CM105600" ColumnName="CM105600" />
+          <ScalarProperty Name="CM105700" ColumnName="CM105700" />
+          <ScalarProperty Name="CM105800" ColumnName="CM105800" />
+          <ScalarProperty Name="CM105900" ColumnName="CM105900" />
+          <ScalarProperty Name="CM106000" ColumnName="CM106000" />
+          <ScalarProperty Name="CM108000" ColumnName="CM108000" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPInvoiceDataTmp">
+      <EntityTypeMapping TypeName="CSPModel.OPInvoiceDataTmp">
+        <MappingFragment StoreEntitySet="OPInvoiceDataTmp">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="DIMInvoiceNo" ColumnName="DIMInvoiceNo" />
+          <ScalarProperty Name="BillTo" ColumnName="BillTo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPMilestoneDataTest">
+      <EntityTypeMapping TypeName="CSPModel.OPMilestoneDataTest">
+        <MappingFragment StoreEntitySet="OPMilestoneDataTest">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="MilestoneID" ColumnName="MilestoneID" />
+          <ScalarProperty Name="DateValue" ColumnName="DateValue" />
+          <ScalarProperty Name="UTCTime" ColumnName="UTCTime" />
+          <ScalarProperty Name="MilestoneName" ColumnName="MilestoneName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UTCOffSet" ColumnName="UTCOffSet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPMilestoneDataTmp1">
+      <EntityTypeMapping TypeName="CSPModel.OPMilestoneDataTmp1">
+        <MappingFragment StoreEntitySet="OPMilestoneDataTmp1">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="MilestoneID" ColumnName="MilestoneID" />
+          <ScalarProperty Name="DateValue" ColumnName="DateValue" />
+          <ScalarProperty Name="UTCTime" ColumnName="UTCTime" />
+          <ScalarProperty Name="MilestoneName" ColumnName="MilestoneName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UTCOffSet" ColumnName="UTCOffSet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPMilestoneFactDataTmp">
+      <EntityTypeMapping TypeName="CSPModel.OPMilestoneFactDataTmp">
+        <MappingFragment StoreEntitySet="OPMilestoneFactDataTmp">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="CurrentMilestoneID" ColumnName="CurrentMilestoneID" />
+          <ScalarProperty Name="CurrentMilestone" ColumnName="CurrentMilestone" />
+          <ScalarProperty Name="CurrentMilestone_ALL_ID" ColumnName="CurrentMilestone_ALL_ID" />
+          <ScalarProperty Name="CurrentMilestone_ALL" ColumnName="CurrentMilestone_ALL" />
+          <ScalarProperty Name="CurrentMilestone_Cus_ID" ColumnName="CurrentMilestone_Cus_ID" />
+          <ScalarProperty Name="CurrentMilestone_Cus" ColumnName="CurrentMilestone_Cus" />
+          <ScalarProperty Name="CurrentMilestone_WT_ID" ColumnName="CurrentMilestone_WT_ID" />
+          <ScalarProperty Name="CurrentMilestone_WT" ColumnName="CurrentMilestone_WT" />
+          <ScalarProperty Name="M100" ColumnName="M100" />
+          <ScalarProperty Name="M200" ColumnName="M200" />
+          <ScalarProperty Name="M300" ColumnName="M300" />
+          <ScalarProperty Name="M400" ColumnName="M400" />
+          <ScalarProperty Name="M500" ColumnName="M500" />
+          <ScalarProperty Name="M600" ColumnName="M600" />
+          <ScalarProperty Name="M650" ColumnName="M650" />
+          <ScalarProperty Name="M700" ColumnName="M700" />
+          <ScalarProperty Name="M750" ColumnName="M750" />
+          <ScalarProperty Name="M800" ColumnName="M800" />
+          <ScalarProperty Name="M850" ColumnName="M850" />
+          <ScalarProperty Name="M900" ColumnName="M900" />
+          <ScalarProperty Name="M1000" ColumnName="M1000" />
+          <ScalarProperty Name="M1030" ColumnName="M1030" />
+          <ScalarProperty Name="M1050" ColumnName="M1050" />
+          <ScalarProperty Name="M1080" ColumnName="M1080" />
+          <ScalarProperty Name="M1090" ColumnName="M1090" />
+          <ScalarProperty Name="M1100" ColumnName="M1100" />
+          <ScalarProperty Name="M1200" ColumnName="M1200" />
+          <ScalarProperty Name="M1300" ColumnName="M1300" />
+          <ScalarProperty Name="M1310" ColumnName="M1310" />
+          <ScalarProperty Name="M1320" ColumnName="M1320" />
+          <ScalarProperty Name="M1330" ColumnName="M1330" />
+          <ScalarProperty Name="M1340" ColumnName="M1340" />
+          <ScalarProperty Name="M1350" ColumnName="M1350" />
+          <ScalarProperty Name="M1360" ColumnName="M1360" />
+          <ScalarProperty Name="M1400" ColumnName="M1400" />
+          <ScalarProperty Name="M1600" ColumnName="M1600" />
+          <ScalarProperty Name="M1700" ColumnName="M1700" />
+          <ScalarProperty Name="M1750" ColumnName="M1750" />
+          <ScalarProperty Name="M1800" ColumnName="M1800" />
+          <ScalarProperty Name="M1850" ColumnName="M1850" />
+          <ScalarProperty Name="M1900" ColumnName="M1900" />
+          <ScalarProperty Name="M2000" ColumnName="M2000" />
+          <ScalarProperty Name="M2100" ColumnName="M2100" />
+          <ScalarProperty Name="M2200" ColumnName="M2200" />
+          <ScalarProperty Name="M2300" ColumnName="M2300" />
+          <ScalarProperty Name="M2400" ColumnName="M2400" />
+          <ScalarProperty Name="M2500" ColumnName="M2500" />
+          <ScalarProperty Name="M2550" ColumnName="M2550" />
+          <ScalarProperty Name="M2600" ColumnName="M2600" />
+          <ScalarProperty Name="M2700" ColumnName="M2700" />
+          <ScalarProperty Name="M2800" ColumnName="M2800" />
+          <ScalarProperty Name="M2850" ColumnName="M2850" />
+          <ScalarProperty Name="M2900" ColumnName="M2900" />
+          <ScalarProperty Name="M2930" ColumnName="M2930" />
+          <ScalarProperty Name="M2950" ColumnName="M2950" />
+          <ScalarProperty Name="M2970" ColumnName="M2970" />
+          <ScalarProperty Name="M3000" ColumnName="M3000" />
+          <ScalarProperty Name="M3100" ColumnName="M3100" />
+          <ScalarProperty Name="M3200" ColumnName="M3200" />
+          <ScalarProperty Name="M3300" ColumnName="M3300" />
+          <ScalarProperty Name="M3400" ColumnName="M3400" />
+          <ScalarProperty Name="M3500" ColumnName="M3500" />
+          <ScalarProperty Name="M8000" ColumnName="M8000" />
+          <ScalarProperty Name="M100050" ColumnName="M100050" />
+          <ScalarProperty Name="M100100" ColumnName="M100100" />
+          <ScalarProperty Name="M100130" ColumnName="M100130" />
+          <ScalarProperty Name="M100150" ColumnName="M100150" />
+          <ScalarProperty Name="M100170" ColumnName="M100170" />
+          <ScalarProperty Name="M100200" ColumnName="M100200" />
+          <ScalarProperty Name="M100300" ColumnName="M100300" />
+          <ScalarProperty Name="M100400" ColumnName="M100400" />
+          <ScalarProperty Name="M100500" ColumnName="M100500" />
+          <ScalarProperty Name="M100600" ColumnName="M100600" />
+          <ScalarProperty Name="M100700" ColumnName="M100700" />
+          <ScalarProperty Name="M100800" ColumnName="M100800" />
+          <ScalarProperty Name="M100900" ColumnName="M100900" />
+          <ScalarProperty Name="M101000" ColumnName="M101000" />
+          <ScalarProperty Name="M101100" ColumnName="M101100" />
+          <ScalarProperty Name="M101150" ColumnName="M101150" />
+          <ScalarProperty Name="M101200" ColumnName="M101200" />
+          <ScalarProperty Name="M101300" ColumnName="M101300" />
+          <ScalarProperty Name="M101400" ColumnName="M101400" />
+          <ScalarProperty Name="M101500" ColumnName="M101500" />
+          <ScalarProperty Name="M101600" ColumnName="M101600" />
+          <ScalarProperty Name="M101650" ColumnName="M101650" />
+          <ScalarProperty Name="M101700" ColumnName="M101700" />
+          <ScalarProperty Name="M101750" ColumnName="M101750" />
+          <ScalarProperty Name="M101760" ColumnName="M101760" />
+          <ScalarProperty Name="M101800" ColumnName="M101800" />
+          <ScalarProperty Name="M101810" ColumnName="M101810" />
+          <ScalarProperty Name="M101820" ColumnName="M101820" />
+          <ScalarProperty Name="M101850" ColumnName="M101850" />
+          <ScalarProperty Name="M101860" ColumnName="M101860" />
+          <ScalarProperty Name="M101900" ColumnName="M101900" />
+          <ScalarProperty Name="M101910" ColumnName="M101910" />
+          <ScalarProperty Name="M101920" ColumnName="M101920" />
+          <ScalarProperty Name="M101930" ColumnName="M101930" />
+          <ScalarProperty Name="M101940" ColumnName="M101940" />
+          <ScalarProperty Name="M101950" ColumnName="M101950" />
+          <ScalarProperty Name="M101960" ColumnName="M101960" />
+          <ScalarProperty Name="M101970" ColumnName="M101970" />
+          <ScalarProperty Name="M102000" ColumnName="M102000" />
+          <ScalarProperty Name="M102100" ColumnName="M102100" />
+          <ScalarProperty Name="M102200" ColumnName="M102200" />
+          <ScalarProperty Name="M102300" ColumnName="M102300" />
+          <ScalarProperty Name="M102400" ColumnName="M102400" />
+          <ScalarProperty Name="M102500" ColumnName="M102500" />
+          <ScalarProperty Name="M102600" ColumnName="M102600" />
+          <ScalarProperty Name="M102700" ColumnName="M102700" />
+          <ScalarProperty Name="M102900" ColumnName="M102900" />
+          <ScalarProperty Name="M102950" ColumnName="M102950" />
+          <ScalarProperty Name="M103000" ColumnName="M103000" />
+          <ScalarProperty Name="M103100" ColumnName="M103100" />
+          <ScalarProperty Name="M103200" ColumnName="M103200" />
+          <ScalarProperty Name="M103300" ColumnName="M103300" />
+          <ScalarProperty Name="M103400" ColumnName="M103400" />
+          <ScalarProperty Name="M103500" ColumnName="M103500" />
+          <ScalarProperty Name="M103600" ColumnName="M103600" />
+          <ScalarProperty Name="M103700" ColumnName="M103700" />
+          <ScalarProperty Name="M103800" ColumnName="M103800" />
+          <ScalarProperty Name="M103900" ColumnName="M103900" />
+          <ScalarProperty Name="M104000" ColumnName="M104000" />
+          <ScalarProperty Name="M104100" ColumnName="M104100" />
+          <ScalarProperty Name="M104200" ColumnName="M104200" />
+          <ScalarProperty Name="M104300" ColumnName="M104300" />
+          <ScalarProperty Name="M104400" ColumnName="M104400" />
+          <ScalarProperty Name="M104500" ColumnName="M104500" />
+          <ScalarProperty Name="M104600" ColumnName="M104600" />
+          <ScalarProperty Name="M104700" ColumnName="M104700" />
+          <ScalarProperty Name="M104800" ColumnName="M104800" />
+          <ScalarProperty Name="M104900" ColumnName="M104900" />
+          <ScalarProperty Name="M104950" ColumnName="M104950" />
+          <ScalarProperty Name="M105000" ColumnName="M105000" />
+          <ScalarProperty Name="M105100" ColumnName="M105100" />
+          <ScalarProperty Name="M105200" ColumnName="M105200" />
+          <ScalarProperty Name="M105300" ColumnName="M105300" />
+          <ScalarProperty Name="M105400" ColumnName="M105400" />
+          <ScalarProperty Name="M105500" ColumnName="M105500" />
+          <ScalarProperty Name="M105550" ColumnName="M105550" />
+          <ScalarProperty Name="M105600" ColumnName="M105600" />
+          <ScalarProperty Name="M105700" ColumnName="M105700" />
+          <ScalarProperty Name="M105800" ColumnName="M105800" />
+          <ScalarProperty Name="M105900" ColumnName="M105900" />
+          <ScalarProperty Name="M106000" ColumnName="M106000" />
+          <ScalarProperty Name="M108000" ColumnName="M108000" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPPODataOld">
+      <EntityTypeMapping TypeName="CSPModel.OPPODataOld">
+        <MappingFragment StoreEntitySet="OPPODataOld">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="PONo" ColumnName="PONo" />
+          <ScalarProperty Name="CommInvNo" ColumnName="CommInvNo" />
+          <ScalarProperty Name="CommInvCurr" ColumnName="CommInvCurr" />
+          <ScalarProperty Name="CommInvAmt" ColumnName="CommInvAmt" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="POExtra1" ColumnName="POExtra1" />
+          <ScalarProperty Name="POExtra2" ColumnName="POExtra2" />
+          <ScalarProperty Name="POExtra3" ColumnName="POExtra3" />
+          <ScalarProperty Name="POExtra4" ColumnName="POExtra4" />
+          <ScalarProperty Name="POExtra5" ColumnName="POExtra5" />
+          <ScalarProperty Name="POExtra6" ColumnName="POExtra6" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="CTNS" ColumnName="CTNS" />
+          <ScalarProperty Name="PORemark" ColumnName="PORemark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPPODataTest">
+      <EntityTypeMapping TypeName="CSPModel.OPPODataTest">
+        <MappingFragment StoreEntitySet="OPPODataTest">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="PONo" ColumnName="PONo" />
+          <ScalarProperty Name="CommInvNo" ColumnName="CommInvNo" />
+          <ScalarProperty Name="CommInvCurr" ColumnName="CommInvCurr" />
+          <ScalarProperty Name="CommInvAmt" ColumnName="CommInvAmt" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="POExtra1" ColumnName="POExtra1" />
+          <ScalarProperty Name="POExtra2" ColumnName="POExtra2" />
+          <ScalarProperty Name="POExtra3" ColumnName="POExtra3" />
+          <ScalarProperty Name="POExtra4" ColumnName="POExtra4" />
+          <ScalarProperty Name="POExtra5" ColumnName="POExtra5" />
+          <ScalarProperty Name="POExtra6" ColumnName="POExtra6" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="CTNS" ColumnName="CTNS" />
+          <ScalarProperty Name="PORemark" ColumnName="PORemark" />
+          <ScalarProperty Name="POItemNo" ColumnName="POItemNo" />
+          <ScalarProperty Name="POSONo" ColumnName="POSONo" />
+          <ScalarProperty Name="CommInvDate" ColumnName="CommInvDate" />
+          <ScalarProperty Name="POFinalDSTN" ColumnName="POFinalDSTN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPShipmentDataOld">
+      <EntityTypeMapping TypeName="CSPModel.OPShipmentDataOld">
+        <MappingFragment StoreEntitySet="OPShipmentDataOld">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="IDType" ColumnName="IDType" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MasterNo" ColumnName="MasterNo" />
+          <ScalarProperty Name="HouseNo" ColumnName="HouseNo" />
+          <ScalarProperty Name="ESkirtSID" ColumnName="ESkirtSID" />
+          <ScalarProperty Name="ESkirtHID" ColumnName="ESkirtHID" />
+          <ScalarProperty Name="ESkirtMID" ColumnName="ESkirtMID" />
+          <ScalarProperty Name="MStationID" ColumnName="MStationID" />
+          <ScalarProperty Name="EHubSID" ColumnName="EHubSID" />
+          <ScalarProperty Name="EHubHID" ColumnName="EHubHID" />
+          <ScalarProperty Name="IHubSID" ColumnName="IHubSID" />
+          <ScalarProperty Name="IHubHID" ColumnName="IHubHID" />
+          <ScalarProperty Name="ISkirtSID" ColumnName="ISkirtSID" />
+          <ScalarProperty Name="ISkirtHID" ColumnName="ISkirtHID" />
+          <ScalarProperty Name="ISkirtMID" ColumnName="ISkirtMID" />
+          <ScalarProperty Name="ISkirtMSID" ColumnName="ISkirtMSID" />
+          <ScalarProperty Name="ELotNo" ColumnName="ELotNo" />
+          <ScalarProperty Name="ILotNo" ColumnName="ILotNo" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="OriginCityCode" ColumnName="OriginCityCode" />
+          <ScalarProperty Name="OriginCityName" ColumnName="OriginCityName" />
+          <ScalarProperty Name="OriginCountryCode" ColumnName="OriginCountryCode" />
+          <ScalarProperty Name="OriginCountryName" ColumnName="OriginCountryName" />
+          <ScalarProperty Name="POL" ColumnName="POL" />
+          <ScalarProperty Name="POLCode" ColumnName="POLCode" />
+          <ScalarProperty Name="POLName" ColumnName="POLName" />
+          <ScalarProperty Name="POLCountryCode" ColumnName="POLCountryCode" />
+          <ScalarProperty Name="POLCountryName" ColumnName="POLCountryName" />
+          <ScalarProperty Name="POD" ColumnName="POD" />
+          <ScalarProperty Name="PODCode" ColumnName="PODCode" />
+          <ScalarProperty Name="PODName" ColumnName="PODName" />
+          <ScalarProperty Name="PODCountryCode" ColumnName="PODCountryCode" />
+          <ScalarProperty Name="PODCountryName" ColumnName="PODCountryName" />
+          <ScalarProperty Name="DSTN" ColumnName="DSTN" />
+          <ScalarProperty Name="DSTNCityCode" ColumnName="DSTNCityCode" />
+          <ScalarProperty Name="DSTNCityName" ColumnName="DSTNCityName" />
+          <ScalarProperty Name="DSTNCountryCode" ColumnName="DSTNCountryCode" />
+          <ScalarProperty Name="DSTNCountryName" ColumnName="DSTNCountryName" />
+          <ScalarProperty Name="Shipper" ColumnName="Shipper" />
+          <ScalarProperty Name="ShipperCode" ColumnName="ShipperCode" />
+          <ScalarProperty Name="ShipperName" ColumnName="ShipperName" />
+          <ScalarProperty Name="HouseShipperName" ColumnName="HouseShipperName" />
+          <ScalarProperty Name="HouseShipperAddr" ColumnName="HouseShipperAddr" />
+          <ScalarProperty Name="CNEE" ColumnName="CNEE" />
+          <ScalarProperty Name="CNEECode" ColumnName="CNEECode" />
+          <ScalarProperty Name="CNEEName" ColumnName="CNEEName" />
+          <ScalarProperty Name="HouseCNEEName" ColumnName="HouseCNEEName" />
+          <ScalarProperty Name="HouseCNEEAddr" ColumnName="HouseCNEEAddr" />
+          <ScalarProperty Name="Notify" ColumnName="Notify" />
+          <ScalarProperty Name="NotifyCode" ColumnName="NotifyCode" />
+          <ScalarProperty Name="NotifyName" ColumnName="NotifyName" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="ServiceLevel" ColumnName="ServiceLevel" />
+          <ScalarProperty Name="TradeTerm" ColumnName="TradeTerm" />
+          <ScalarProperty Name="Move" ColumnName="Move" />
+          <ScalarProperty Name="BookedFLT" ColumnName="BookedFLT" />
+          <ScalarProperty Name="OnBoardFLT" ColumnName="OnBoardFLT" />
+          <ScalarProperty Name="Vessel" ColumnName="Vessel" />
+          <ScalarProperty Name="Voyage" ColumnName="Voyage" />
+          <ScalarProperty Name="CWT" ColumnName="CWT" />
+          <ScalarProperty Name="CWTUOM" ColumnName="CWTUOM" />
+          <ScalarProperty Name="GWT" ColumnName="GWT" />
+          <ScalarProperty Name="GWTUOM" ColumnName="GWTUOM" />
+          <ScalarProperty Name="PCS" ColumnName="PCS" />
+          <ScalarProperty Name="PCSUOM" ColumnName="PCSUOM" />
+          <ScalarProperty Name="CBM" ColumnName="CBM" />
+          <ScalarProperty Name="TEU" ColumnName="TEU" />
+          <ScalarProperty Name="C20" ColumnName="C20" />
+          <ScalarProperty Name="C40" ColumnName="C40" />
+          <ScalarProperty Name="C40H" ColumnName="C40H" />
+          <ScalarProperty Name="C45" ColumnName="C45" />
+          <ScalarProperty Name="OtherCNTR" ColumnName="OtherCNTR" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DIMINV" ColumnName="DIMINV" />
+          <ScalarProperty Name="CTNRNo" ColumnName="CTNRNo" />
+          <ScalarProperty Name="PickAddr" ColumnName="PickAddr" />
+          <ScalarProperty Name="DELVAddr" ColumnName="DELVAddr" />
+          <ScalarProperty Name="PickPCS" ColumnName="PickPCS" />
+          <ScalarProperty Name="PickPCSUOM" ColumnName="PickPCSUOM" />
+          <ScalarProperty Name="PickWeight" ColumnName="PickWeight" />
+          <ScalarProperty Name="PickWeightUOM" ColumnName="PickWeightUOM" />
+          <ScalarProperty Name="ActualPickup" ColumnName="ActualPickup" />
+          <ScalarProperty Name="PickRemark" ColumnName="PickRemark" />
+          <ScalarProperty Name="VWT" ColumnName="VWT" />
+          <ScalarProperty Name="Volumn" ColumnName="Volumn" />
+          <ScalarProperty Name="Extra0" ColumnName="Extra0" />
+          <ScalarProperty Name="Extra1" ColumnName="Extra1" />
+          <ScalarProperty Name="Extra2" ColumnName="Extra2" />
+          <ScalarProperty Name="Extra3" ColumnName="Extra3" />
+          <ScalarProperty Name="Extra4" ColumnName="Extra4" />
+          <ScalarProperty Name="Extra5" ColumnName="Extra5" />
+          <ScalarProperty Name="Extra6" ColumnName="Extra6" />
+          <ScalarProperty Name="Extra7" ColumnName="Extra7" />
+          <ScalarProperty Name="Extra8" ColumnName="Extra8" />
+          <ScalarProperty Name="Extra9" ColumnName="Extra9" />
+          <ScalarProperty Name="SCHCargoSignBy" ColumnName="SCHCargoSignBy" />
+          <ScalarProperty Name="HRemark" ColumnName="HRemark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPShipmentDataTest">
+      <EntityTypeMapping TypeName="CSPModel.OPShipmentDataTest">
+        <MappingFragment StoreEntitySet="OPShipmentDataTest">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="IDType" ColumnName="IDType" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MasterNo" ColumnName="MasterNo" />
+          <ScalarProperty Name="HouseNo" ColumnName="HouseNo" />
+          <ScalarProperty Name="ESkirtSID" ColumnName="ESkirtSID" />
+          <ScalarProperty Name="ESkirtHID" ColumnName="ESkirtHID" />
+          <ScalarProperty Name="ESkirtMID" ColumnName="ESkirtMID" />
+          <ScalarProperty Name="MStationID" ColumnName="MStationID" />
+          <ScalarProperty Name="EHubSID" ColumnName="EHubSID" />
+          <ScalarProperty Name="EHubHID" ColumnName="EHubHID" />
+          <ScalarProperty Name="IHubSID" ColumnName="IHubSID" />
+          <ScalarProperty Name="IHubHID" ColumnName="IHubHID" />
+          <ScalarProperty Name="ISkirtSID" ColumnName="ISkirtSID" />
+          <ScalarProperty Name="ISkirtHID" ColumnName="ISkirtHID" />
+          <ScalarProperty Name="ISkirtMID" ColumnName="ISkirtMID" />
+          <ScalarProperty Name="ISkirtMSID" ColumnName="ISkirtMSID" />
+          <ScalarProperty Name="ELotNo" ColumnName="ELotNo" />
+          <ScalarProperty Name="ILotNo" ColumnName="ILotNo" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="OriginCityCode" ColumnName="OriginCityCode" />
+          <ScalarProperty Name="OriginCityName" ColumnName="OriginCityName" />
+          <ScalarProperty Name="OriginCountryCode" ColumnName="OriginCountryCode" />
+          <ScalarProperty Name="OriginCountryName" ColumnName="OriginCountryName" />
+          <ScalarProperty Name="POL" ColumnName="POL" />
+          <ScalarProperty Name="POLCode" ColumnName="POLCode" />
+          <ScalarProperty Name="POLName" ColumnName="POLName" />
+          <ScalarProperty Name="POLCountryCode" ColumnName="POLCountryCode" />
+          <ScalarProperty Name="POLCountryName" ColumnName="POLCountryName" />
+          <ScalarProperty Name="POD" ColumnName="POD" />
+          <ScalarProperty Name="PODCode" ColumnName="PODCode" />
+          <ScalarProperty Name="PODName" ColumnName="PODName" />
+          <ScalarProperty Name="PODCountryCode" ColumnName="PODCountryCode" />
+          <ScalarProperty Name="PODCountryName" ColumnName="PODCountryName" />
+          <ScalarProperty Name="DSTN" ColumnName="DSTN" />
+          <ScalarProperty Name="DSTNCityCode" ColumnName="DSTNCityCode" />
+          <ScalarProperty Name="DSTNCityName" ColumnName="DSTNCityName" />
+          <ScalarProperty Name="DSTNCountryCode" ColumnName="DSTNCountryCode" />
+          <ScalarProperty Name="DSTNCountryName" ColumnName="DSTNCountryName" />
+          <ScalarProperty Name="Shipper" ColumnName="Shipper" />
+          <ScalarProperty Name="ShipperCode" ColumnName="ShipperCode" />
+          <ScalarProperty Name="ShipperName" ColumnName="ShipperName" />
+          <ScalarProperty Name="HouseShipperName" ColumnName="HouseShipperName" />
+          <ScalarProperty Name="HouseShipperAddr" ColumnName="HouseShipperAddr" />
+          <ScalarProperty Name="CNEE" ColumnName="CNEE" />
+          <ScalarProperty Name="CNEECode" ColumnName="CNEECode" />
+          <ScalarProperty Name="CNEEName" ColumnName="CNEEName" />
+          <ScalarProperty Name="HouseCNEEName" ColumnName="HouseCNEEName" />
+          <ScalarProperty Name="HouseCNEEAddr" ColumnName="HouseCNEEAddr" />
+          <ScalarProperty Name="Notify" ColumnName="Notify" />
+          <ScalarProperty Name="NotifyCode" ColumnName="NotifyCode" />
+          <ScalarProperty Name="NotifyName" ColumnName="NotifyName" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+          <ScalarProperty Name="ServiceLevel" ColumnName="ServiceLevel" />
+          <ScalarProperty Name="TradeTerm" ColumnName="TradeTerm" />
+          <ScalarProperty Name="Move" ColumnName="Move" />
+          <ScalarProperty Name="BookedFLT" ColumnName="BookedFLT" />
+          <ScalarProperty Name="OnBoardFLT" ColumnName="OnBoardFLT" />
+          <ScalarProperty Name="Vessel" ColumnName="Vessel" />
+          <ScalarProperty Name="Voyage" ColumnName="Voyage" />
+          <ScalarProperty Name="CWT" ColumnName="CWT" />
+          <ScalarProperty Name="CWTUOM" ColumnName="CWTUOM" />
+          <ScalarProperty Name="GWT" ColumnName="GWT" />
+          <ScalarProperty Name="GWTUOM" ColumnName="GWTUOM" />
+          <ScalarProperty Name="PCS" ColumnName="PCS" />
+          <ScalarProperty Name="PCSUOM" ColumnName="PCSUOM" />
+          <ScalarProperty Name="CBM" ColumnName="CBM" />
+          <ScalarProperty Name="TEU" ColumnName="TEU" />
+          <ScalarProperty Name="C20" ColumnName="C20" />
+          <ScalarProperty Name="C40" ColumnName="C40" />
+          <ScalarProperty Name="C40H" ColumnName="C40H" />
+          <ScalarProperty Name="C45" ColumnName="C45" />
+          <ScalarProperty Name="OtherCNTR" ColumnName="OtherCNTR" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="DIMINV" ColumnName="DIMINV" />
+          <ScalarProperty Name="CTNRNo" ColumnName="CTNRNo" />
+          <ScalarProperty Name="PickAddr" ColumnName="PickAddr" />
+          <ScalarProperty Name="DELVAddr" ColumnName="DELVAddr" />
+          <ScalarProperty Name="PickPCS" ColumnName="PickPCS" />
+          <ScalarProperty Name="PickPCSUOM" ColumnName="PickPCSUOM" />
+          <ScalarProperty Name="PickWeight" ColumnName="PickWeight" />
+          <ScalarProperty Name="PickWeightUOM" ColumnName="PickWeightUOM" />
+          <ScalarProperty Name="ActualPickup" ColumnName="ActualPickup" />
+          <ScalarProperty Name="PickRemark" ColumnName="PickRemark" />
+          <ScalarProperty Name="VWT" ColumnName="VWT" />
+          <ScalarProperty Name="Volumn" ColumnName="Volumn" />
+          <ScalarProperty Name="Extra0" ColumnName="Extra0" />
+          <ScalarProperty Name="Extra1" ColumnName="Extra1" />
+          <ScalarProperty Name="Extra2" ColumnName="Extra2" />
+          <ScalarProperty Name="Extra3" ColumnName="Extra3" />
+          <ScalarProperty Name="Extra4" ColumnName="Extra4" />
+          <ScalarProperty Name="Extra5" ColumnName="Extra5" />
+          <ScalarProperty Name="Extra6" ColumnName="Extra6" />
+          <ScalarProperty Name="Extra7" ColumnName="Extra7" />
+          <ScalarProperty Name="Extra8" ColumnName="Extra8" />
+          <ScalarProperty Name="Extra9" ColumnName="Extra9" />
+          <ScalarProperty Name="SCHCargoSignBy" ColumnName="SCHCargoSignBy" />
+          <ScalarProperty Name="HRemark" ColumnName="HRemark" />
+          <ScalarProperty Name="MasterCarrier" ColumnName="MasterCarrier" />
+          <ScalarProperty Name="MasterCarrierCode" ColumnName="MasterCarrierCode" />
+          <ScalarProperty Name="MasterCarrierName" ColumnName="MasterCarrierName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPSummaryDataOld">
+      <EntityTypeMapping TypeName="CSPModel.OPSummaryDataOld">
+        <MappingFragment StoreEntitySet="OPSummaryDataOld">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="FRT_NET_CUS" ColumnName="FRT_NET_CUS" />
+          <ScalarProperty Name="FRT_VAT_CUS" ColumnName="FRT_VAT_CUS" />
+          <ScalarProperty Name="FSC_NET_CUS" ColumnName="FSC_NET_CUS" />
+          <ScalarProperty Name="FSC_VAT_CUS" ColumnName="FSC_VAT_CUS" />
+          <ScalarProperty Name="WRS_NET_CUS" ColumnName="WRS_NET_CUS" />
+          <ScalarProperty Name="WRS_VAT_CUS" ColumnName="WRS_VAT_CUS" />
+          <ScalarProperty Name="Other_NET_CUS" ColumnName="Other_NET_CUS" />
+          <ScalarProperty Name="Other_VAT_CUS" ColumnName="Other_VAT_CUS" />
+          <ScalarProperty Name="TTL_NET_CUS" ColumnName="TTL_NET_CUS" />
+          <ScalarProperty Name="TTL_VAT_CUS" ColumnName="TTL_VAT_CUS" />
+          <ScalarProperty Name="ORG_Other_NET_CUS" ColumnName="ORG_Other_NET_CUS" />
+          <ScalarProperty Name="ORG_Other_VAT_CUS" ColumnName="ORG_Other_VAT_CUS" />
+          <ScalarProperty Name="DSTN_Other_NET_CUS" ColumnName="DSTN_Other_NET_CUS" />
+          <ScalarProperty Name="DSTN_Other_VAT_CUS" ColumnName="DSTN_Other_VAT_CUS" />
+          <ScalarProperty Name="Surcharges_VAT_CUS" ColumnName="Surcharges_VAT_CUS" />
+          <ScalarProperty Name="Surcharges_NET_CUS" ColumnName="Surcharges_NET_CUS" />
+          <ScalarProperty Name="Duty_NET_CUS" ColumnName="Duty_NET_CUS" />
+          <ScalarProperty Name="Duty_VAT_CUS" ColumnName="Duty_VAT_CUS" />
+          <ScalarProperty Name="FRT_NET_ALL" ColumnName="FRT_NET_ALL" />
+          <ScalarProperty Name="FRT_VAT_ALL" ColumnName="FRT_VAT_ALL" />
+          <ScalarProperty Name="FSC_NET_ALL" ColumnName="FSC_NET_ALL" />
+          <ScalarProperty Name="FSC_VAT_ALL" ColumnName="FSC_VAT_ALL" />
+          <ScalarProperty Name="WRS_NET_ALL" ColumnName="WRS_NET_ALL" />
+          <ScalarProperty Name="WRS_VAT_ALL" ColumnName="WRS_VAT_ALL" />
+          <ScalarProperty Name="Other_NET_ALL" ColumnName="Other_NET_ALL" />
+          <ScalarProperty Name="Other_VAT_ALL" ColumnName="Other_VAT_ALL" />
+          <ScalarProperty Name="TTL_NET_ALL" ColumnName="TTL_NET_ALL" />
+          <ScalarProperty Name="TTL_VAT_ALL" ColumnName="TTL_VAT_ALL" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ORG_Other_NET_ALL" ColumnName="ORG_Other_NET_ALL" />
+          <ScalarProperty Name="ORG_Other_VAT_ALL" ColumnName="ORG_Other_VAT_ALL" />
+          <ScalarProperty Name="DSTN_Other_NET_ALL" ColumnName="DSTN_Other_NET_ALL" />
+          <ScalarProperty Name="DSTN_Other_VAT_ALL" ColumnName="DSTN_Other_VAT_ALL" />
+          <ScalarProperty Name="Surcharges_NET_ALL" ColumnName="Surcharges_NET_ALL" />
+          <ScalarProperty Name="Surcharges_VAT_ALL" ColumnName="Surcharges_VAT_ALL" />
+          <ScalarProperty Name="Duty_NET_ALL" ColumnName="Duty_NET_ALL" />
+          <ScalarProperty Name="Duty_VAT_ALL" ColumnName="Duty_VAT_ALL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPSummaryDataTest">
+      <EntityTypeMapping TypeName="CSPModel.OPSummaryDataTest">
+        <MappingFragment StoreEntitySet="OPSummaryDataTest">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PL" ColumnName="PL" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="FRT_NET_CUS" ColumnName="FRT_NET_CUS" />
+          <ScalarProperty Name="FRT_VAT_CUS" ColumnName="FRT_VAT_CUS" />
+          <ScalarProperty Name="FSC_NET_CUS" ColumnName="FSC_NET_CUS" />
+          <ScalarProperty Name="FSC_VAT_CUS" ColumnName="FSC_VAT_CUS" />
+          <ScalarProperty Name="WRS_NET_CUS" ColumnName="WRS_NET_CUS" />
+          <ScalarProperty Name="WRS_VAT_CUS" ColumnName="WRS_VAT_CUS" />
+          <ScalarProperty Name="Other_NET_CUS" ColumnName="Other_NET_CUS" />
+          <ScalarProperty Name="Other_VAT_CUS" ColumnName="Other_VAT_CUS" />
+          <ScalarProperty Name="TTL_NET_CUS" ColumnName="TTL_NET_CUS" />
+          <ScalarProperty Name="TTL_VAT_CUS" ColumnName="TTL_VAT_CUS" />
+          <ScalarProperty Name="ORG_Other_NET_CUS" ColumnName="ORG_Other_NET_CUS" />
+          <ScalarProperty Name="ORG_Other_VAT_CUS" ColumnName="ORG_Other_VAT_CUS" />
+          <ScalarProperty Name="DSTN_Other_NET_CUS" ColumnName="DSTN_Other_NET_CUS" />
+          <ScalarProperty Name="DSTN_Other_VAT_CUS" ColumnName="DSTN_Other_VAT_CUS" />
+          <ScalarProperty Name="Surcharges_VAT_CUS" ColumnName="Surcharges_VAT_CUS" />
+          <ScalarProperty Name="Surcharges_NET_CUS" ColumnName="Surcharges_NET_CUS" />
+          <ScalarProperty Name="Duty_NET_CUS" ColumnName="Duty_NET_CUS" />
+          <ScalarProperty Name="Duty_VAT_CUS" ColumnName="Duty_VAT_CUS" />
+          <ScalarProperty Name="FRT_NET_ALL" ColumnName="FRT_NET_ALL" />
+          <ScalarProperty Name="FRT_VAT_ALL" ColumnName="FRT_VAT_ALL" />
+          <ScalarProperty Name="FSC_NET_ALL" ColumnName="FSC_NET_ALL" />
+          <ScalarProperty Name="FSC_VAT_ALL" ColumnName="FSC_VAT_ALL" />
+          <ScalarProperty Name="WRS_NET_ALL" ColumnName="WRS_NET_ALL" />
+          <ScalarProperty Name="WRS_VAT_ALL" ColumnName="WRS_VAT_ALL" />
+          <ScalarProperty Name="Other_NET_ALL" ColumnName="Other_NET_ALL" />
+          <ScalarProperty Name="Other_VAT_ALL" ColumnName="Other_VAT_ALL" />
+          <ScalarProperty Name="TTL_NET_ALL" ColumnName="TTL_NET_ALL" />
+          <ScalarProperty Name="TTL_VAT_ALL" ColumnName="TTL_VAT_ALL" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ORG_Other_NET_ALL" ColumnName="ORG_Other_NET_ALL" />
+          <ScalarProperty Name="ORG_Other_VAT_ALL" ColumnName="ORG_Other_VAT_ALL" />
+          <ScalarProperty Name="DSTN_Other_NET_ALL" ColumnName="DSTN_Other_NET_ALL" />
+          <ScalarProperty Name="DSTN_Other_VAT_ALL" ColumnName="DSTN_Other_VAT_ALL" />
+          <ScalarProperty Name="Surcharges_NET_ALL" ColumnName="Surcharges_NET_ALL" />
+          <ScalarProperty Name="Surcharges_VAT_ALL" ColumnName="Surcharges_VAT_ALL" />
+          <ScalarProperty Name="Duty_NET_ALL" ColumnName="Duty_NET_ALL" />
+          <ScalarProperty Name="Duty_VAT_ALL" ColumnName="Duty_VAT_ALL" />
+          <ScalarProperty Name="SalesExtra0" ColumnName="SalesExtra0" />
+          <ScalarProperty Name="SalesExtra1" ColumnName="SalesExtra1" />
+          <ScalarProperty Name="SalesExtra2" ColumnName="SalesExtra2" />
+          <ScalarProperty Name="SalesExtra3" ColumnName="SalesExtra3" />
+          <ScalarProperty Name="SalesExtra4" ColumnName="SalesExtra4" />
+          <ScalarProperty Name="SalesExtra5" ColumnName="SalesExtra5" />
+          <ScalarProperty Name="SalesExtra6" ColumnName="SalesExtra6" />
+          <ScalarProperty Name="SalesExtra7" ColumnName="SalesExtra7" />
+          <ScalarProperty Name="SalesExtra8" ColumnName="SalesExtra8" />
+          <ScalarProperty Name="SalesExtra9" ColumnName="SalesExtra9" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProcessLog">
+      <EntityTypeMapping TypeName="CSPModel.ProcessLog">
+        <MappingFragment StoreEntitySet="ProcessLog">
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SCSubTaskLog">
+      <EntityTypeMapping TypeName="CSPModel.SCSubTaskLog">
+        <MappingFragment StoreEntitySet="SCSubTaskLog">
+          <ScalarProperty Name="MID" ColumnName="MID" />
+          <ScalarProperty Name="SubTaskLog" ColumnName="SubTaskLog" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="DrillKey" ColumnName="DrillKey" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysarticlecolumns">
+      <EntityTypeMapping TypeName="CSPModel.sysarticlecolumns">
+        <MappingFragment StoreEntitySet="sysarticlecolumns">
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="colid" ColumnName="colid" />
+          <ScalarProperty Name="is_udt" ColumnName="is_udt" />
+          <ScalarProperty Name="is_xml" ColumnName="is_xml" />
+          <ScalarProperty Name="is_max" ColumnName="is_max" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysarticles">
+      <EntityTypeMapping TypeName="CSPModel.sysarticles">
+        <MappingFragment StoreEntitySet="sysarticles">
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="creation_script" ColumnName="creation_script" />
+          <ScalarProperty Name="del_cmd" ColumnName="del_cmd" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="dest_table" ColumnName="dest_table" />
+          <ScalarProperty Name="filter" ColumnName="filter" />
+          <ScalarProperty Name="filter_clause" ColumnName="filter_clause" />
+          <ScalarProperty Name="ins_cmd" ColumnName="ins_cmd" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="objid" ColumnName="objid" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="pre_creation_cmd" ColumnName="pre_creation_cmd" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="sync_objid" ColumnName="sync_objid" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="upd_cmd" ColumnName="upd_cmd" />
+          <ScalarProperty Name="schema_option" ColumnName="schema_option" />
+          <ScalarProperty Name="dest_owner" ColumnName="dest_owner" />
+          <ScalarProperty Name="ins_scripting_proc" ColumnName="ins_scripting_proc" />
+          <ScalarProperty Name="del_scripting_proc" ColumnName="del_scripting_proc" />
+          <ScalarProperty Name="upd_scripting_proc" ColumnName="upd_scripting_proc" />
+          <ScalarProperty Name="custom_script" ColumnName="custom_script" />
+          <ScalarProperty Name="fire_triggers_on_snapshot" ColumnName="fire_triggers_on_snapshot" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysarticleupdates">
+      <EntityTypeMapping TypeName="CSPModel.sysarticleupdates">
+        <MappingFragment StoreEntitySet="sysarticleupdates">
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="sync_ins_proc" ColumnName="sync_ins_proc" />
+          <ScalarProperty Name="sync_upd_proc" ColumnName="sync_upd_proc" />
+          <ScalarProperty Name="sync_del_proc" ColumnName="sync_del_proc" />
+          <ScalarProperty Name="autogen" ColumnName="autogen" />
+          <ScalarProperty Name="sync_upd_trig" ColumnName="sync_upd_trig" />
+          <ScalarProperty Name="conflict_tableid" ColumnName="conflict_tableid" />
+          <ScalarProperty Name="ins_conflict_proc" ColumnName="ins_conflict_proc" />
+          <ScalarProperty Name="identity_support" ColumnName="identity_support" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="syspublications">
+      <EntityTypeMapping TypeName="CSPModel.syspublications">
+        <MappingFragment StoreEntitySet="syspublications">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="repl_freq" ColumnName="repl_freq" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="sync_method" ColumnName="sync_method" />
+          <ScalarProperty Name="snapshot_jobid" ColumnName="snapshot_jobid" />
+          <ScalarProperty Name="independent_agent" ColumnName="independent_agent" />
+          <ScalarProperty Name="immediate_sync" ColumnName="immediate_sync" />
+          <ScalarProperty Name="enabled_for_internet" ColumnName="enabled_for_internet" />
+          <ScalarProperty Name="allow_push" ColumnName="allow_push" />
+          <ScalarProperty Name="allow_pull" ColumnName="allow_pull" />
+          <ScalarProperty Name="allow_anonymous" ColumnName="allow_anonymous" />
+          <ScalarProperty Name="immediate_sync_ready" ColumnName="immediate_sync_ready" />
+          <ScalarProperty Name="allow_sync_tran" ColumnName="allow_sync_tran" />
+          <ScalarProperty Name="autogen_sync_procs" ColumnName="autogen_sync_procs" />
+          <ScalarProperty Name="retention" ColumnName="retention" />
+          <ScalarProperty Name="allow_queued_tran" ColumnName="allow_queued_tran" />
+          <ScalarProperty Name="snapshot_in_defaultfolder" ColumnName="snapshot_in_defaultfolder" />
+          <ScalarProperty Name="alt_snapshot_folder" ColumnName="alt_snapshot_folder" />
+          <ScalarProperty Name="pre_snapshot_script" ColumnName="pre_snapshot_script" />
+          <ScalarProperty Name="post_snapshot_script" ColumnName="post_snapshot_script" />
+          <ScalarProperty Name="compress_snapshot" ColumnName="compress_snapshot" />
+          <ScalarProperty Name="ftp_address" ColumnName="ftp_address" />
+          <ScalarProperty Name="ftp_port" ColumnName="ftp_port" />
+          <ScalarProperty Name="ftp_subdirectory" ColumnName="ftp_subdirectory" />
+          <ScalarProperty Name="ftp_login" ColumnName="ftp_login" />
+          <ScalarProperty Name="ftp_password" ColumnName="ftp_password" />
+          <ScalarProperty Name="allow_dts" ColumnName="allow_dts" />
+          <ScalarProperty Name="allow_subscription_copy" ColumnName="allow_subscription_copy" />
+          <ScalarProperty Name="centralized_conflicts" ColumnName="centralized_conflicts" />
+          <ScalarProperty Name="conflict_retention" ColumnName="conflict_retention" />
+          <ScalarProperty Name="conflict_policy" ColumnName="conflict_policy" />
+          <ScalarProperty Name="queue_type" ColumnName="queue_type" />
+          <ScalarProperty Name="ad_guidname" ColumnName="ad_guidname" />
+          <ScalarProperty Name="backward_comp_level" ColumnName="backward_comp_level" />
+          <ScalarProperty Name="allow_initialize_from_backup" ColumnName="allow_initialize_from_backup" />
+          <ScalarProperty Name="min_autonosync_lsn" ColumnName="min_autonosync_lsn" />
+          <ScalarProperty Name="replicate_ddl" ColumnName="replicate_ddl" />
+          <ScalarProperty Name="options" ColumnName="options" />
+          <ScalarProperty Name="originator_id" ColumnName="originator_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysschemaarticles">
+      <EntityTypeMapping TypeName="CSPModel.sysschemaarticles">
+        <MappingFragment StoreEntitySet="sysschemaarticles">
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="creation_script" ColumnName="creation_script" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="dest_object" ColumnName="dest_object" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="objid" ColumnName="objid" />
+          <ScalarProperty Name="pubid" ColumnName="pubid" />
+          <ScalarProperty Name="pre_creation_cmd" ColumnName="pre_creation_cmd" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="schema_option" ColumnName="schema_option" />
+          <ScalarProperty Name="dest_owner" ColumnName="dest_owner" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="syssubscriptions">
+      <EntityTypeMapping TypeName="CSPModel.syssubscriptions">
+        <MappingFragment StoreEntitySet="syssubscriptions">
+          <ScalarProperty Name="artid" ColumnName="artid" />
+          <ScalarProperty Name="srvid" ColumnName="srvid" />
+          <ScalarProperty Name="dest_db" ColumnName="dest_db" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="sync_type" ColumnName="sync_type" />
+          <ScalarProperty Name="login_name" ColumnName="login_name" />
+          <ScalarProperty Name="subscription_type" ColumnName="subscription_type" />
+          <ScalarProperty Name="distribution_jobid" ColumnName="distribution_jobid" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="update_mode" ColumnName="update_mode" />
+          <ScalarProperty Name="loopback_detection" ColumnName="loopback_detection" />
+          <ScalarProperty Name="queued_reinit" ColumnName="queued_reinit" />
+          <ScalarProperty Name="nosync_type" ColumnName="nosync_type" />
+          <ScalarProperty Name="srvname" ColumnName="srvname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="systranschemas">
+      <EntityTypeMapping TypeName="CSPModel.systranschemas">
+        <MappingFragment StoreEntitySet="systranschemas">
+          <ScalarProperty Name="tabid" ColumnName="tabid" />
+          <ScalarProperty Name="startlsn" ColumnName="startlsn" />
+          <ScalarProperty Name="endlsn" ColumnName="endlsn" />
+          <ScalarProperty Name="typeid" ColumnName="typeid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
